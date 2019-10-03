@@ -1,0 +1,77 @@
+[
+  {
+    "name": "Home",
+    "pages": [
+      {
+        "Run": false,
+        "Page": "PGA Home",
+        "Locale": "Home",
+        "URL": "https://dbeofnzbx0eyo.cloudfront.net/",
+        "LeaderboardUrl": "https://dbeofnzbx0eyo.cloudfront.net/",
+        "EventUrl": "https://do4r16vzs7yos.cloudfront.net/events/pgachampionship"
+      }
+    ]
+  },
+  {
+    "name": "Play Courses Landing",
+    "pages": [
+      {
+        "Run": false,
+        "Page": "Courses",
+        "Locale": "Play",
+        "LeaderboardUrl": "https://dbeofnzbx0eyo.cloudfront.net/courses",
+        "EventUrl": "https://do4r16vzs7yos.cloudfront.net/events/pgachampionship"
+      },
+      {
+        "Run": false,
+        "Page": "Courses/State",
+        "Locale": "Play",
+        "LeaderboardUrl": "https://dbeofnzbx0eyo.cloudfront.net/courses/NV",
+        "EventUrl": "https://do4r16vzs7yos.cloudfront.net/events/pgachampionship"
+      },
+      {
+        "Run": false,
+        "Page": "Courses/State/City",
+        "Locale": "Play",
+        "LeaderboardUrl": "https://dbeofnzbx0eyo.cloudfront.net/courses/NV/Carson%20City",
+        "EventUrl": "https://do4r16vzs7yos.cloudfront.net/events/pgachampionship"
+      },
+      {
+        "Run": false,
+        "Page": "Courses/State/City/Facility",
+        "Locale": "Play",
+        "LeaderboardUrl": "https://dbeofnzbx0eyo.cloudfront.net/courses/facility?id=27611863",
+        "EventUrl": "https://do4r16vzs7yos.cloudfront.net/events/pgachampionship"
+      }
+    ]
+  },
+  {
+    "name": "Tournaments",
+    "pages": [
+      {
+        "Run": true,
+        "Page": "Shrines-event",
+        "Locale": "Events",
+        "LeaderboardUrl": "https://dbeofnzbx0eyo.cloudfront.net/events/leaderboards/pga-tour-leaderboard",
+        "EventUrl": "https://dbeofnzbx0eyo.cloudfront.net/events/leaderboards/pga-tour-leaderboard",
+        "ExternalUrl": "https://www.pgatour.com/competition/2020/shriners-hospitals-for-children-open/leaderboard.html"
+      },
+      {
+        "Run": false,
+        "Page": "indy-women-in-tech-championship",
+        "Locale": "Events",
+        "LeaderboardUrl": "https://dbeofnzbx0eyo.cloudfront.net/events/indy-women-in-tech-championship/leaderboard",
+        "EventUrl": "https://dbeofnzbx0eyo.cloudfront.net/events/indy-women-in-tech-championship",
+        "ExternalUrl": ""
+      },
+      {
+        "Run": false,
+        "Page": "pga-junior-league-golf-championship",
+        "Locale": "Events",
+        "LeaderboardUrl": "https://dbeofnzbx0eyo.cloudfront.net/events/pga-junior-league-golf-championship/leaderboard",
+        "EventUrl": "https://dbeofnzbx0eyo.cloudfront.net/events/pga-junior-league-golf-championship",
+        "ExternalUrl": ""
+      }
+    ]
+  }
+]

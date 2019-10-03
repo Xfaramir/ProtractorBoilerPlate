@@ -3,16 +3,19 @@
 
 const { SpecReporter } = require('jasmine-spec-reporter');
 
+const AllureReporter = require('jasmine-allure-reporter');
+
+const screenShotUtils = require('protractor-screenshot-utils')
+  .ProtractorScreenShotUtils;
+
 exports.config = {
   allScriptsTimeout: 11000,
-  specs: [
-    './src/**/*.e2e-spec.ts'
-  ],
+  specs: ['./src/specs/**/*.e2e-spec.ts'],
   capabilities: {
-    'browserName': 'chrome'
+    browserName: 'chrome'
   },
   directConnect: true,
-  baseUrl: 'http://localhost:4200/',
+  baseUrl: 'https://www.protractortest.org',
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,
@@ -21,8 +24,37 @@ exports.config = {
   },
   onPrepare() {
     require('ts-node').register({
-      project: require('path').join(__dirname, './tsconfig.e2e.json')
+      project: require('path').resolve(__dirname, './tsconfig.e2e.json')
     });
-    jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
+
+    global.screenShotUtils = new screenShotUtils({
+      browserInstance: browser,
+      setAsDefaultScreenshotMethod: true
+    });
+
+    jasmine
+      .getEnv()
+      .addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
+
+    jasmine.getEnv().addReporter(
+      new AllureReporter({
+        resultsDir: './e2e/allure-results'
+      })
+    );
+    // Taking a screenshot at the end of each spec for jenkins allure report
+    jasmine.getEnv().afterEach(function(done) {
+      browser.takeScreenshot().then(function(png) {
+        allure.createAttachment(
+          'Screenshot',
+          function() {
+            return new Buffer(png, 'base64');
+          },
+          'image/png'
+        )();
+        allure.addEnvironment('QA', 'David Barrera');
+        allure.severity('Normal');
+        done();
+      });
+    });
   }
 };
