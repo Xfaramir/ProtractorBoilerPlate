@@ -1,0 +1,21 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1570119649268' stop='1570119651011'>
+    <name>workspace-project App</name>
+    <title>workspace-project App</title>
+    <test-cases>
+        <test-case start='1570119649270' status='passed' stop='1570119651011'>
+            <name>should display welcome message</name>
+            <title>should display welcome message</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='4904477a-9d06-4520-aa93-ef6edb00de79-attachment.png' type='image/png' size='1011214'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

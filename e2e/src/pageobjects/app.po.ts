@@ -8,7 +8,7 @@ export class AppPage extends BasePage {
     super();
 
     this.header = element(
-      by.js(function() {
+      by.js(() => {
         return document.querySelector(
           'div:nth-child(5) > div:nth-child(1) > h3'
         );

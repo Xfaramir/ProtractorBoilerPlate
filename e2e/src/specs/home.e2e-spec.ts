@@ -5,12 +5,16 @@ import { async } from 'q';
 describe('workspace-project App', () => {
   let page: AppPage;
 
-  beforeEach(() => {
+  beforeAll(async () => {
+    console.log('Starting Home Test');
+  });
+
+  beforeEach(async () => {
     page = new AppPage();
+    await page.navigateTo();
   });
 
   it('should display welcome message', async () => {
-    await page.navigateTo();
     await expect(page.getTitleText()).toEqual('Test Like a User');
   });
 
