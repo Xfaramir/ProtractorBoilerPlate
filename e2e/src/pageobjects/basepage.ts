@@ -1,6 +1,6 @@
 import { protractor } from 'protractor/built/ptor';
 
-import { browser } from 'protractor';
+import { browser, element } from 'protractor';
 
 export default class BasePage {
   timeout: {
@@ -114,5 +114,12 @@ export default class BasePage {
       // the parent should be 2 less than the length of all found window handlers
       // browser.switchTo().window(handles.length - 2);
     });
+  }
+
+  async focusMouse(elem) {
+    browser
+      .actions()
+      .mouseMove(element(elem))
+      .perform();
   }
 }

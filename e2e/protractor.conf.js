@@ -29,9 +29,10 @@ exports.config = {
 
     global.screenShotUtils = new screenShotUtils({
       browserInstance: browser,
-      setAsDefaultScreenshotMethod: true
+      setAsDefaultScreenshotMethod: false
     });
 
+    
     jasmine
       .getEnv()
       .addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
@@ -41,7 +42,7 @@ exports.config = {
         resultsDir: './e2e/allure-results'
       })
     );
-    // Taking a screenshot at the end of each spec for jenkins allure report
+    // Taking a screenshot at the end of each it spec for jenkins allure report
     jasmine.getEnv().afterEach(function(done) {
       browser.takeScreenshot().then(function(png) {
         allure.createAttachment(
