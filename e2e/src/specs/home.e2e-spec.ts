@@ -1,6 +1,6 @@
 import { AppPage } from '../pageobjects/app.po';
-import { browser, logging, protractor, element, by } from 'protractor';
-var EC = protractor.ExpectedConditions;
+import { browser, logging } from 'protractor';
+
 describe('workspace-project App', () => {
   let page: AppPage;
 
@@ -24,25 +24,19 @@ describe('workspace-project App', () => {
   });
 
   it('should display leaderboard', async () => {
-    let leaderboardButton = page.getLeaderboardButton();
-    await browser.wait(EC.visibilityOf(leaderboardButton));
-    await browser
-      .actions()
-      .mouseMove(leaderboardButton)
-      .perform();
+    const leaderboardButton = page.getLeaderboardButton();
+    await page.expectAndFocus(leaderboardButton);
   });
 
   it('should display coach image', async () => {
-    await browser.wait(EC.visibilityOf(page.getCoachImage()));
-    await browser
-      .actions()
-      .mouseMove(page.getCoachImage())
-      .perform();
+    const coachImage = page.getCoachImage();
+    await page.expectAndFocus(coachImage);
   });
 
-  it('should click button and open coach overlay', async () => {
-    browser.wait(EC.visibilityOf(page.getCoachButton()));
-    page.getCoachButton().click();
+  it('should display overlay after click', async () => {
+    const coachButton = await page.getCoachButton();
+    page.expectElement(coachButton);
+    coachButton.click();
   });
 
   afterEach(async () => {

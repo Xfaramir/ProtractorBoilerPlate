@@ -2,6 +2,7 @@ import { protractor } from 'protractor/built/ptor';
 
 import { browser, element } from 'protractor';
 
+const EC = protractor.ExpectedConditions;
 export default class BasePage {
   timeout: {
     xs: number;
@@ -121,5 +122,17 @@ export default class BasePage {
       .actions()
       .mouseMove(element(elem))
       .perform();
+  }
+
+  async expectAndFocus(elem) {
+    browser.wait(EC.visibilityOf(elem));
+    browser
+      .actions()
+      .mouseMove(elem)
+      .perform();
+  }
+
+  async expectElement(elem) {
+    browser.wait(EC.visibilityOf(elem));
   }
 }

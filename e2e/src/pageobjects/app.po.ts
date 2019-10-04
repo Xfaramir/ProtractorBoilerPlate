@@ -22,24 +22,24 @@ export class AppPage extends BasePage {
 
     this.leaderboardPlayer = element(
       by.js(() => {
-        return document.querySelector('div.MuiBox-root.jss478 > a');
+        return document.querySelector('div.MuiBox-root.jss291 > a');
       })
     );
 
     this.coachImage = element(
       by.js(() => {
-        return document.querySelector('div.jss337.jss346.jss308 h5');
+        return document.querySelector('div.jss351.jss360.jss321');
       })
     );
     this.coachButton = element(
       by.xpath(
-        "(.//*[normalize-space(text()) and normalize-space(.)='Eric Hogge,'])[3]/following::div[3]"
+        '(.//*[normalize-space(text()) and normalize-space(.)="Eric Hogge,"])[3]/following::div[3]'
       )
     );
 
     this.bannerGDRP = element(
       by.js(() => {
-        return document.querySelector('.jss402');
+        return document.querySelector('.jss416');
       })
     );
   }
