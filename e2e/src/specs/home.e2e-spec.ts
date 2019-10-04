@@ -35,8 +35,8 @@ describe('workspace-project App', () => {
 
   it('should display overlay after click', async () => {
     const coachButton = await page.getCoachButton();
-    page.expectElement(coachButton);
-    coachButton.click();
+    await page.expectElement(coachButton);
+    await coachButton.click();
   });
 
   afterEach(async () => {
