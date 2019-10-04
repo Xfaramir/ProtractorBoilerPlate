@@ -1,17 +1,16 @@
-import { AppPage } from '../pageobjects/app.po';
+import { HomePage } from '../pageobjects/homePage.po';
 import { browser, logging } from 'protractor';
 
 describe('workspace-project App', () => {
-  let page: AppPage;
+  let page: HomePage;
 
   beforeAll(async () => {
     console.log('Starting Home Test');
-  });
-
-  beforeEach(async () => {
-    page = new AppPage();
+    page = new HomePage();
     await page.navigateTo();
   });
+
+  beforeEach(async () => {});
 
   it('should display headline', async () => {
     await expect(page.getTitleText()).toEqual(
@@ -35,8 +34,18 @@ describe('workspace-project App', () => {
 
   it('should display overlay after click', async () => {
     const coachButton = await page.getCoachButton();
-    await page.expectElement(coachButton);
     await coachButton.click();
+  });
+
+  it('should play video', async () => {
+    const videoButton = await page.getVideoButton();
+    await videoButton.click();
+    browser.sleep(2000);
+  });
+
+  it('should close video', async () => {
+    const videoCloseButton = await page.getVideoButton();
+    await videoCloseButton.click();
   });
 
   afterEach(async () => {

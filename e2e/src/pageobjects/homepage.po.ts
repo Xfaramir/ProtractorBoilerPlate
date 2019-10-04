@@ -1,22 +1,90 @@
-import BasePage from './basepage';
-import { element, by, $$, ElementFinder, browser } from 'protractor';
+import { browser, by, element, ElementFinder } from 'protractor';
+import BasePage from './basePage';
 
-class HomePage extends BasePage {
-  searchBox: ElementFinder;
-  addnameBox: ElementFinder;
+browser.waitForAngularEnabled(false);
+export class HomePage extends BasePage {
+  header: any;
+  leaderboardPlayer: ElementFinder;
+  coachImage: ElementFinder;
+  bannerGDRP: ElementFinder;
+  coachButton: ElementFinder;
+  videoButton: ElementFinder;
+  videoCloseButton: ElementFinder;
 
   constructor() {
     super();
-    this.searchBox = element(by.model('search'));
-    this.addnameBox = element(by.model('addName'));
+    this.url = 'https://dbeofnzbx0eyo.cloudfront.net/';
+    this.header = element(
+      by.js(() => {
+        return document.querySelector(
+          'div.jss113 > div:nth-child(1) > div > div:nth-child(4) a h2'
+        );
+      })
+    );
 
-    this.url = 'angular/friends/';
-    this.pageLoaded = this.inDom($('h2.ng-binding'));
+    this.leaderboardPlayer = element(
+      by.js(() => {
+        return document.querySelector('div.MuiBox-root.jss291 > a');
+      })
+    );
+
+    this.coachImage = element(
+      by.js(() => {
+        return document.querySelector('div.jss351.jss360.jss321');
+      })
+    );
+    this.coachButton = element(
+      by.xpath(
+        '(.//*[normalize-space(text()) and normalize-space(.)="Eric Hogge,"])[3]/following::div[3]'
+      )
+    );
+
+    this.bannerGDRP = element(
+      by.js(() => {
+        return document.querySelector('.jss416');
+      })
+    );
+
+    this.videoButton = element(
+      by.js(() => {
+        return document.querySelector('div.jss478');
+      })
+    );
+
+    this.videoCloseButton = element(
+      by.js(() => {
+        return document.querySelector(
+          'body > div.MuiDialog-root > div.MuiDialog-container.MuiDialog-scrollPaper > div > button'
+        );
+      })
+    );
   }
 
-  searchFor(parameter: string) {
-    return this.searchBox.sendKeys(parameter);
+  async getTitleText(): Promise<string> {
+    return this.header.getText();
+  }
+  async navigateTo(): Promise<any> {
+    return browser.get(this.url);
+  }
+
+  getLeaderboardButton(): ElementFinder {
+    return this.leaderboardPlayer;
+  }
+
+  getCoachButton(): ElementFinder {
+    return this.coachButton;
+  }
+
+  getCoachImage(): ElementFinder {
+    return this.coachImage;
+  }
+  getBannerGDRP(): ElementFinder {
+    return this.bannerGDRP;
+  }
+  getVideoButton(): ElementFinder {
+    return this.videoButton;
+  }
+  getVideoCloseButton(): ElementFinder {
+    return this.videoCloseButton;
   }
 }
-
-export default new HomePage();
