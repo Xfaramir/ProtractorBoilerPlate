@@ -21,7 +21,75 @@ exports.config = {
   capabilities: {
     browserName: 'chrome'
   },
-  directConnect: true,
+  multiCapabilities: [
+    {
+      name: 'chrome',
+      browserName: 'chrome',
+      count: 1,
+      'goog:chromeOptions': {
+        args: [
+          'no-sandbox',
+          '--headless',
+          'disable-gpu',
+          '--window-size=1366,768'
+        ]
+      }
+    },
+    {
+      name: 'iPhone 5 (s)',
+      browserName: 'chrome',
+      count: 1,
+      'goog:chromeOptions': {
+        args: [
+          'no-sandbox',
+          '--headless',
+          'disable-gpu',
+          '--window-size=320,460'
+        ]
+      }
+    },
+    {
+      name: 'Google Pixel Mobile',
+      browserName: 'chrome',
+      count: 1,
+      'goog:chromeOptions': {
+        args: [
+          'no-sandbox',
+          '--headless',
+          'disable-gpu',
+          '--window-size=412,604'
+        ]
+      }
+    },
+    {
+      name: 'Galaxy Tab S2',
+      browserName: 'chrome',
+      count: 1,
+      'goog:chromeOptions': {
+        args: [
+          'no-sandbox',
+          '--headless',
+          'disable-gpu',
+          '--window-size=768,904'
+        ]
+      }
+    },
+    {
+      name: 'Pixel Tablet',
+      browserName: 'chrome',
+      count: 1,
+      'goog:chromeOptions': {
+        args: [
+          'no-sandbox',
+          '--headless',
+          'disable-gpu',
+          '--window-size=900,1104'
+        ]
+      }
+    }
+  ],
+  directConnect: false,
+  seleniumAddress: 'http://localhost:4444/wd/hub',
   baseUrl: 'https://www.protractortest.org',
   SELENIUM_PROMISE_MANAGER: false,
   framework: 'jasmine',

@@ -42,6 +42,7 @@ describe('workspace-project App', () => {
   });
   it('should close video', async () => {
     const videoCloseButton = await page.getVideoButton();
+    await page.expectAndFocus(videoCloseButton);
     await videoCloseButton.click();
   });
   afterEach(async () => {
