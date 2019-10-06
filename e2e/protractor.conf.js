@@ -9,13 +9,21 @@ const screenShotUtils = require('protractor-screenshot-utils')
   .ProtractorScreenShotUtils;
 
 exports.config = {
-  allScriptsTimeout: 11000,
+  allScriptsTimeout: 15000,
   specs: ['./src/specs/**/*.e2e-spec.ts'],
+  suites: {
+    homepage: 'src/specs/home/home.e2e-spec.ts',
+    search: [
+      'tests/e2e/contact_search/**/*Spec.js',
+      'tests/e2e/venue_search/**/*Spec.js'
+    ]
+  },
   capabilities: {
     browserName: 'chrome'
   },
   directConnect: true,
   baseUrl: 'https://www.protractortest.org',
+  SELENIUM_PROMISE_MANAGER: false,
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,
@@ -32,7 +40,6 @@ exports.config = {
       setAsDefaultScreenshotMethod: false
     });
 
-    
     jasmine
       .getEnv()
       .addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));

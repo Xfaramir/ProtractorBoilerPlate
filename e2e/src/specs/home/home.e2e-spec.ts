@@ -1,4 +1,4 @@
-import { HomePage } from '../pageobjects/homePage.po';
+import { HomePage } from '../../pageobjects/homePage.po';
 import { browser, logging } from 'protractor';
 
 describe('workspace-project App', () => {
@@ -31,23 +31,19 @@ describe('workspace-project App', () => {
     const coachImage = page.getCoachImage();
     await page.expectAndFocus(coachImage);
   });
-
-  it('should display overlay after click', async () => {
+  it('should display overlay after click', async () => {
     const coachButton = await page.getCoachButton();
     await coachButton.click();
   });
-
-  it('should play video', async () => {
+  it('should play video', async () => {
     const videoButton = await page.getVideoButton();
+    await page.expectAndFocus(videoButton);
     await videoButton.click();
-    browser.sleep(2000);
   });
-
-  it('should close video', async () => {
+  it('should close video', async () => {
     const videoCloseButton = await page.getVideoButton();
     await videoCloseButton.click();
   });
-
   afterEach(async () => {
     // Assert that there are no errors emitted from the browser
     const logs = await browser

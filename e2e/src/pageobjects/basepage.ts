@@ -125,7 +125,7 @@ export default class BasePage {
   }
 
   async expectAndFocus(elem) {
-    browser.wait(EC.visibilityOf(elem));
+    browser.isElementPresent(elem);
     browser
       .actions()
       .mouseMove(elem)
@@ -134,5 +134,13 @@ export default class BasePage {
 
   async expectElement(elem) {
     browser.wait(EC.visibilityOf(elem));
+  }
+
+  async expectAndFocusTime(elem, duration) {
+    browser.wait(EC.visibilityOf(elem), duration);
+    browser
+      .actions()
+      .mouseMove(elem)
+      .perform();
   }
 }
