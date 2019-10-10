@@ -143,4 +143,11 @@ export default class BasePage {
       .mouseMove(elem)
       .perform();
   }
+
+  async scrollInto(ele) {
+    return browser.executeScript(
+      'arguments[0].scrollIntoView();',
+      ele.getWebElement()
+    );
+  }
 }

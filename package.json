@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "dev": "node --inspect-brk ./node_modules/protractor/bin/protractor ./e2e/protractor.conf.js"
   },
   "private": true,
   "dependencies": {
