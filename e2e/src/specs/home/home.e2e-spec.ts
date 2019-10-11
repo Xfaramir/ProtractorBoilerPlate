@@ -57,7 +57,7 @@ describe('workspace-project App', () => {
     const footer = page.getFooter();
     const footerText = await footer.getText();
     expect(footerText).toEqual('EXPLORE');
-    await page.expectAndFocus(footer);
+    await page.scrollInto(footer);
   });
 
   afterEach(async () => {
