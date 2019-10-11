@@ -133,7 +133,7 @@ export default class BasePage {
   }
 
   async expectElement(elem) {
-    browser.wait(EC.visibilityOf(elem));
+    browser.isElementPresent(elem);
   }
 
   async expectAndFocusTime(elem, duration) {

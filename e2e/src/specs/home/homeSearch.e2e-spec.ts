@@ -1,21 +1,25 @@
-import { HomeSearchPage } from '../pageobjects/HomeSearchPage.po';
-import { browser, logging } from 'protractor';
+import { HomePage } from '../../pageobjects/homepage.po';
+import { browser, logging, element, by, protractor } from 'protractor';
 
 describe('workspace-project App', () => {
-  let searchBreadCrumbsPage: HomeSearchPage;
+  let searchPage: HomePage;
 
   beforeAll(async () => {
     console.log('Starting Home Search searchBreadCrumbs Test');
-    searchBreadCrumbsPage = new HomeSearchPage();
-    await searchBreadCrumbsPage.navigateTo();
+    searchPage = new HomePage();
+    await searchPage.navigateTo();
   });
 
   beforeEach(async () => {});
 
   it('should make a search at home searchBreadCrumbs', async () => {
-    const searchBreadCrumbs = await searchBreadCrumbsPage.getSearchBreadCrumbs();
-    browser.sleep(10000);
-    await searchBreadCrumbs.click();
+    await searchPage.getSearchBreadCrumbs().click();
+    await searchPage.getSearchInput().sendKeys('help');
+    await browser
+      .actions()
+      .sendKeys(protractor.Key.ENTER)
+      .perform();
+    await browser.sleep(2000);
   });
 
   afterEach(async () => {

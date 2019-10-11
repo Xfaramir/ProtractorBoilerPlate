@@ -10,9 +10,10 @@ const screenShotUtils = require('protractor-screenshot-utils')
 
 exports.config = {
   allScriptsTimeout: 15000,
-  specs: ['./src/specs/**/*.e2e-spec.ts'],
+  // specs: ['./src/specs/**/*.e2e-spec.ts'],
   suites: {
     homepage: 'src/specs/home/home.e2e-spec.ts',
+    homeSearch: 'src/specs/home/homeSearch.e2e-spec.ts',
     search: [
       'tests/e2e/contact_search/**/*Spec.js',
       'tests/e2e/venue_search/**/*Spec.js'

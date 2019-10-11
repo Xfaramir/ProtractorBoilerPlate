@@ -3,88 +3,148 @@ import BasePage from './basePage';
 
 browser.waitForAngularEnabled(false);
 export class HomePage extends BasePage {
-  header: any;
-  leaderboardPlayer: ElementFinder;
+  leaderboardButton: ElementFinder;
   coachImage: ElementFinder;
   bannerGDRP: ElementFinder;
   coachButton: ElementFinder;
   videoButton: ElementFinder;
   videoCloseButton: ElementFinder;
+  pgaOfAmericaHeadline: ElementFinder;
+  winButton: ElementFinder;
+  header: ElementFinder;
+  coachCarrouselImage: ElementFinder;
+  coachOverlayCloseButton: ElementFinder;
+  seriesHeadline: ElementFinder;
+  pgaReachHeadline: ElementFinder;
+  footer: ElementFinder;
+  searchBreadCrumbs: ElementFinder;
+  searchInput: ElementFinder;
 
   constructor() {
     super();
-    this.url = 'https://dbeofnzbx0eyo.cloudfront.net/';
+    this.url = 'https://d3uuen9uojwc0p.cloudfront.net/';
+
     this.header = element(
       by.js(() => {
         return document.querySelector(
-          'div.jss113 > div:nth-child(1) > div > div:nth-child(4) a h2'
+          '#__next > div > div.MuiBox-root.jss106 > div.jss107 > div.jss113 > div:nth-child(1) > div > div:nth-child(4) > div > div > div > a > div'
         );
       })
-    );
-
-    this.leaderboardPlayer = element(
-      by.js(() => {
-        return document.querySelector('div.MuiBox-root.jss291 > a');
-      })
-    );
-
-    this.coachImage = element(
-      by.js(() => {
-        return document.querySelector('div.jss351.jss360.jss321');
-      })
-    );
-    this.coachButton = element(
-      by.xpath(
-        '(.//*[normalize-space(text()) and normalize-space(.)="Eric Hogge,"])[3]/following::div[3]'
-      )
     );
 
     this.bannerGDRP = element(
       by.js(() => {
-        return document.querySelector('.jss416');
-      })
-    );
-
-    this.videoButton = element(
-      by.js(() => {
-        return document.querySelector('div.jss478');
-      })
-    );
-
-    this.videoCloseButton = element(
-      by.js(() => {
         return document.querySelector(
-          'body > div.MuiDialog-root > div.MuiDialog-container.MuiDialog-scrollPaper > div > button'
+          'div.MuiDrawer-root.MuiDrawer-docked button'
         );
       })
     );
+
+    this.leaderboardButton = element(
+      by.js(() => {
+        return document.querySelector('div.MuiBox-root.jss274 h2');
+      })
+    );
+
+    this.pgaOfAmericaHeadline = element(
+      by.js(() => {
+        return document.querySelector(
+          'div:nth-child(4) > div.MuiBox-root.jss294 > a'
+        );
+      })
+    );
+
+    this.winButton = element(
+      by.js(() => {
+        return document.querySelector('div.jss331 > div.jss334 > div > h6');
+      })
+    );
+
+    this.coachCarrouselImage = element(
+      by.js(() => {
+        return document.querySelector('div.jss365.jss374.jss335 > div > h5');
+      })
+    );
+
+    this.coachOverlayCloseButton = element(
+      by.js(() => {
+        return document.querySelector(
+          'div.MuiDialog-container.MuiDialog-scrollPaper > div > button'
+        );
+      })
+    );
+
+    this.seriesHeadline = element(
+      by.js(() => {
+        return document.querySelector(
+          'div.MuiBox-root.jss393 > div.MuiBox-root.jss394.jss383.jss392 > div > div > a > span'
+        );
+      })
+    );
+
+    this.pgaReachHeadline = element(
+      by.js(() => {
+        return document.querySelector('div.MuiBox-root.jss417 > div > span');
+      })
+    );
+    this.footer = element(
+      by.js(() => {
+        return document.querySelector(
+          'div.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-4 > div:nth-child(2) > div > span'
+        );
+      })
+    );
+
+    this.searchBreadCrumbs = element(by.css('svg.MuiSvgIcon-root'));
+    this.searchInput = element(
+      by.xpath(
+        "(.//*[normalize-space(text()) and normalize-space(.)='Privacy Policy'])[2]/following::input[1]"
+      )
+    );
   }
 
-  async getTitleText(): Promise<string> {
-    return this.header.getText();
-  }
   async navigateTo(): Promise<any> {
     return browser.get(this.url);
   }
 
-  getLeaderboardButton(): ElementFinder {
-    return this.leaderboardPlayer;
+  async getHeader(): Promise<ElementFinder> {
+    return this.header;
   }
 
-  getCoachButton(): ElementFinder {
-    return this.coachButton;
+  getFooter(): ElementFinder {
+    return this.footer;
   }
 
-  getCoachImage(): ElementFinder {
-    return this.coachImage;
-  }
   getBannerGDRP(): ElementFinder {
     return this.bannerGDRP;
   }
-  getVideoButton(): ElementFinder {
-    return this.videoButton;
+
+  getLeaderboardButton(): ElementFinder {
+    return this.leaderboardButton;
   }
-  getVideoCloseButton(): ElementFinder {
-    return this.videoCloseButton;
+
+  getPgaOfAmericaHeadline(): ElementFinder {
+    return this.pgaOfAmericaHeadline;
+  }
+  getWinButton(): ElementFinder {
+    return this.winButton;
+  }
+  getCoachCarrouselImage(): ElementFinder {
+    return this.coachCarrouselImage;
+  }
+  getCoachOverlayButton(): ElementFinder {
+    return this.coachOverlayCloseButton;
+  }
+  getSeriesHeadline(): ElementFinder {
+    return this.seriesHeadline;
+  }
+  getPgaReachHeadline(): ElementFinder {
+    return this.pgaReachHeadline;
+  }
+  getSearchBreadCrumbs(): ElementFinder {
+    return this.searchBreadCrumbs;
+  }
+  getSearchInput(): ElementFinder {
+    return this.searchInput;
   }
 }
