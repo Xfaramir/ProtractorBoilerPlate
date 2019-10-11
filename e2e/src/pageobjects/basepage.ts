@@ -150,4 +150,11 @@ export default class BasePage {
       ele.getWebElement()
     );
   }
+
+  async sendEnter() {
+    return browser
+      .actions()
+      .sendKeys(protractor.Key.ENTER)
+      .perform();
+  }
 }

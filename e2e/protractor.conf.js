@@ -89,7 +89,7 @@ exports.config = {
   //     }
   //   }
   // ],
-  directConnect: true,
+  directConnect: false,
   seleniumAddress: 'http://localhost:4444/wd/hub',
   baseUrl: 'https://www.protractortest.org',
   SELENIUM_PROMISE_MANAGER: false,
@@ -100,6 +100,10 @@ exports.config = {
     print: function() {}
   },
   onPrepare() {
+    browser.driver
+      .manage()
+      .window()
+      .maximize();
     require('ts-node').register({
       project: require('path').resolve(__dirname, './tsconfig.e2e.json')
     });

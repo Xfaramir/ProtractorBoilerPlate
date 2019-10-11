@@ -15,13 +15,20 @@ describe('workspace-project App', () => {
   it('should make a search at home searchBreadCrumbs', async () => {
     await searchPage.getSearchBreadCrumbs().click();
     await searchPage.getSearchInput().sendKeys('help');
-    await browser
-      .actions()
-      .sendKeys(protractor.Key.ENTER)
-      .perform();
+    await searchPage.sendEnter();
     await browser.sleep(2000);
   });
 
+  it('should do clear results', async () => {
+    await element(
+      by.js(() => {
+        return document.querySelector(
+          '#__next > div > div.MuiBox-root.jss106 > div.jss534 > div > div.jss539.jss541 > div > button'
+        );
+      })
+    ).click();
+   
+  });
   afterEach(async () => {
     // Assert that there are no errors emitted from the browser
     const logs = await browser
