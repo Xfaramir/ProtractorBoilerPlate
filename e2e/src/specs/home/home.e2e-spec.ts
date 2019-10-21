@@ -1,7 +1,7 @@
 import { HomePage } from '../../pageobjects/homePage.po';
 import { browser, logging, element, by } from 'protractor';
 
-describe('workspace-project App', () => {
+describe('Home Page', () => {
   let page: HomePage;
 
   beforeAll(async () => {
