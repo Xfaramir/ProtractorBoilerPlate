@@ -2,6 +2,7 @@ import { browser, by, element, ElementFinder } from 'protractor';
 import BasePage from './basePage';
 
 browser.waitForAngularEnabled(false);
+browser.ignoreSynchronization = true;
 export class HomePage extends BasePage {
   leaderboardButton: ElementFinder;
   coachImage: ElementFinder;
@@ -10,19 +11,22 @@ export class HomePage extends BasePage {
   videoButton: ElementFinder;
   videoCloseButton: ElementFinder;
   pgaOfAmericaHeadline: ElementFinder;
-  winButton: ElementFinder;
+  levelUpButton: ElementFinder;
   header: ElementFinder;
   coachCarrouselImage: ElementFinder;
   coachOverlayCloseButton: ElementFinder;
-  seriesHeadline: ElementFinder;
+  topStoriesHeadline: ElementFinder;
   pgaReachHeadline: ElementFinder;
   footer: ElementFinder;
   searchBreadCrumbs: ElementFinder;
   searchInput: ElementFinder;
+  connectButton: ElementFinder;
+  escapeButton: ElementFinder;
+  coachOverlayVideoButton: ElementFinder;
 
   constructor() {
     super();
-    this.url = 'https://d3uuen9uojwc0p.cloudfront.net/';
+    this.url = 'https://d2eam07qccllcf.cloudfront.net/';
 
     this.header = element(
       by.js(() => {
@@ -40,53 +44,27 @@ export class HomePage extends BasePage {
       })
     );
 
-    this.leaderboardButton = element(
-      by.js(() => {
-        return document.querySelector('div.MuiBox-root.jss274 h2');
-      })
-    );
+    this.leaderboardButton = element(by.css('.jss276 h2'));
 
-    this.pgaOfAmericaHeadline = element(
-      by.js(() => {
-        return document.querySelector(
-          'div:nth-child(4) > div.MuiBox-root.jss294 > a'
-        );
-      })
-    );
+    this.pgaOfAmericaHeadline = element(by.css('.jss330 p'));
 
-    this.winButton = element(
-      by.js(() => {
-        return document.querySelector('div.jss331 > div.jss334 > div > h6');
-      })
-    );
+    this.levelUpButton = element(by.css('.jss335 h6:nth-child(1)'));
+    this.connectButton = element(by.css('.jss335 h6:nth-child(2)'));
+    this.escapeButton = element(by.css('.jss335 h6:nth-child(3)'));
 
     this.coachCarrouselImage = element(
-      by.js(() => {
-        return document.querySelector('div.jss365.jss374.jss335 > div > h5');
-      })
+      by.css('.jss332 > div:nth-child(3) div:nth-child(3)')
     );
+
+    this.coachOverlayVideoButton = element(by.css('use'));
 
     this.coachOverlayCloseButton = element(
-      by.js(() => {
-        return document.querySelector(
-          'div.MuiDialog-container.MuiDialog-scrollPaper > div > button'
-        );
-      })
+      by.css('svg.MuiSvgIcon-root.jss338 > path')
     );
 
-    this.seriesHeadline = element(
-      by.js(() => {
-        return document.querySelector(
-          'div.MuiBox-root.jss393 > div.MuiBox-root.jss394.jss383.jss392 > div > div > a > span'
-        );
-      })
-    );
+    this.topStoriesHeadline = element(by.css('.jss403 h4'));
 
-    this.pgaReachHeadline = element(
-      by.js(() => {
-        return document.querySelector('div.MuiBox-root.jss417 > div > span');
-      })
-    );
+    this.pgaReachHeadline = element(by.css('.jss438 > div > p'));
     this.footer = element(
       by.js(() => {
         return document.querySelector(
@@ -96,55 +74,10 @@ export class HomePage extends BasePage {
     );
 
     this.searchBreadCrumbs = element(by.css('svg.MuiSvgIcon-root'));
-    this.searchInput = element(
-      by.xpath(
-        "(.//*[normalize-space(text()) and normalize-space(.)='Privacy Policy'])[2]/following::input[1]"
-      )
-    );
+    this.searchInput = element(by.css('.jss24 input'));
   }
 
   async navigateTo(): Promise<any> {
     return browser.get(this.url);
-  }
-
-  async getHeader(): Promise<ElementFinder> {
-    return this.header;
-  }
-
-  getFooter(): ElementFinder {
-    return this.footer;
-  }
-
-  getBannerGDRP(): ElementFinder {
-    return this.bannerGDRP;
-  }
-
-  getLeaderboardButton(): ElementFinder {
-    return this.leaderboardButton;
-  }
-
-  getPgaOfAmericaHeadline(): ElementFinder {
-    return this.pgaOfAmericaHeadline;
-  }
-  getWinButton(): ElementFinder {
-    return this.winButton;
-  }
-  getCoachCarrouselImage(): ElementFinder {
-    return this.coachCarrouselImage;
-  }
-  getCoachOverlayButton(): ElementFinder {
-    return this.coachOverlayCloseButton;
-  }
-  getSeriesHeadline(): ElementFinder {
-    return this.seriesHeadline;
-  }
-  getPgaReachHeadline(): ElementFinder {
-    return this.pgaReachHeadline;
-  }
-  getSearchBreadCrumbs(): ElementFinder {
-    return this.searchBreadCrumbs;
-  }
-  getSearchInput(): ElementFinder {
-    return this.searchInput;
   }
 }

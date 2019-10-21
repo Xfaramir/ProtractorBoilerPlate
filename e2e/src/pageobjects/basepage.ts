@@ -1,6 +1,6 @@
 import { protractor } from 'protractor/built/ptor';
 
-import { browser, element } from 'protractor';
+import { browser, element, ElementFinder, by } from 'protractor';
 
 const EC = protractor.ExpectedConditions;
 export default class BasePage {
@@ -14,7 +14,19 @@ export default class BasePage {
   };
   url: string;
   pageLoaded: any;
+
+  bannerGDRP: ElementFinder;
+  searchNavButton: ElementFinder;
+  searchNavInput: ElementFinder;
   constructor() {
+    this.bannerGDRP = element(
+      by.css('div.MuiDrawer-root.MuiDrawer-docked button')
+    );
+
+    this.searchNavButton = element(by.css('header button'));
+
+    this.searchNavInput = element(by.css('nav input'));
+
     /**
      * wrap this.timeout. (ms) in t-shirt sizes
      */
@@ -36,21 +48,6 @@ export default class BasePage {
 
   async navigateTo() {
     return await browser.get(browser.baseUrl);
-  }
-
-  async loaded() {
-    return browser.wait(
-      async () => {
-        return await this.pageLoaded();
-      },
-      this.timeout.xl,
-      'timeout: waiting for page to load. The url is: ' + this.url
-    );
-  }
-
-  async goto() {
-    await browser.get(this.url, this.timeout.xl);
-    return await this.loaded();
   }
 
   isVisible(locator) {
@@ -118,41 +115,76 @@ export default class BasePage {
   }
 
   async focusMouse(elem) {
-    browser
+    await browser
       .actions()
-      .mouseMove(element(elem))
+      .mouseMove(elem)
       .perform();
   }
 
   async expectAndFocus(elem) {
-    browser.isElementPresent(elem);
-    browser
+    await browser.isElementPresent(elem);
+    await browser
       .actions()
       .mouseMove(elem)
       .perform();
   }
 
   async expectElement(elem) {
-    browser.isElementPresent(elem);
+    await browser.wait(EC.presenceOf(elem), 10000);
+  }
+  async expectVisibility(elem) {
+    await browser.wait(EC.visibilityOf(elem), 5000);
+  }
+  
+  async expectClickable(elem) {
+    await browser.wait(EC.elementToBeClickable(elem), 5000);
+  }
+  async expectAndScroll(elem) {
+    await browser.wait(EC.presenceOf(elem), 10000);
+    await browser.executeScript(
+      'arguments[0].scrollIntoView(true)',
+      elem.getWebElement()
+    );
   }
 
   async expectAndFocusTime(elem, duration) {
-    browser.wait(EC.visibilityOf(elem), duration);
+    browser.wait(EC.presenceOf(elem), duration);
     browser
       .actions()
       .mouseMove(elem)
       .perform();
   }
 
-  async scrollInto(ele) {
-    return browser.executeScript(
-      'arguments[0].scrollIntoView();',
+  async scrollCenter(ele) {
+    await browser.executeScript(
+      'arguments[0].scrollIntoView({block: "center"})',
+      ele.getWebElement()
+    );
+  }
+
+  async scrollStart(ele) {
+    await browser.executeScript(
+      'arguments[0].scrollIntoView({block: "start"})',
+      ele.getWebElement()
+    );
+  }
+
+  async scrollEnd(ele) {
+    await browser.executeScript(
+      'arguments[0].scrollIntoView({block: "end"})',
+      ele.getWebElement()
+    );
+  }
+
+  async scrollNearest(ele) {
+    await browser.executeScript(
+      'arguments[0].scrollIntoView({block: "nearest"})',
       ele.getWebElement()
     );
   }
 
   async sendEnter() {
-    return browser
+    await browser
       .actions()
       .sendKeys(protractor.Key.ENTER)
       .perform();

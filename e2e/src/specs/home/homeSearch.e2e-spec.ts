@@ -1,34 +1,42 @@
 import { HomePage } from '../../pageobjects/homepage.po';
+import { SearchPage } from '../../pageobjects/searchpage.po';
 import { browser, logging, element, by, protractor } from 'protractor';
 
-describe('workspace-project App', () => {
-  let searchPage: HomePage;
+describe('Search Page', () => {
+  let searchPage: SearchPage;
 
   beforeAll(async () => {
-    console.log('Starting Home Search searchBreadCrumbs Test');
-    searchPage = new HomePage();
+    console.log('Starting search page');
+
+    searchPage = new SearchPage();
     await searchPage.navigateTo();
   });
 
   beforeEach(async () => {});
 
-  it('should make a search at home searchBreadCrumbs', async () => {
-    await searchPage.getSearchBreadCrumbs().click();
-    await searchPage.getSearchInput().sendKeys('help');
-    await searchPage.sendEnter();
-    await browser.sleep(2000);
+  it('should do a search', async () => {
+    await searchPage.searchNavButton.click();
+    await searchPage.searchNavInput.sendKeys('Help');
   });
 
-  it('should do clear results', async () => {
-    await element(
-      by.js(() => {
-        return document.querySelector(
-          '#__next > div > div.MuiBox-root.jss106 > div.jss534 > div > div.jss539.jss541 > div > button'
-        );
-      })
-    ).click();
-   
+  it('should clear search results', async () => {
+    await searchPage.sendEnter();
+    await searchPage.expectClickable(searchPage.searchClearButton);
+    await searchPage.searchClearButton.click();
   });
+
+  it('should do another query from fixed search bar', async () => {
+    await searchPage.searchBar.sendKeys('pga');
+    await searchPage.sendEnter();
+    await searchPage.expectVisibility(searchPage.searchPaginationButton);
+  });
+
+  it('should do click on next pagination button', async () => {
+    await searchPage.searchPaginationButton.click();
+    await searchPage.expectVisibility(searchPage.searchPaginationButton);
+    await searchPage.scrollCenter(searchPage.searchPaginationButton);
+  });
+
   afterEach(async () => {
     // Assert that there are no errors emitted from the browser
     const logs = await browser
