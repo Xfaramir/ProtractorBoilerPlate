@@ -1,4 +1,3 @@
-import { HomePage } from '../../pageobjects/homepage.po';
 import { SearchPage } from '../../pageobjects/searchpage.po';
 import { browser, logging, element, by, protractor } from 'protractor';
 
@@ -6,7 +5,7 @@ describe('Search Page', () => {
   let searchPage: SearchPage;
 
   beforeAll(async () => {
-    console.log('Starting search page');
+    console.log('Starting Search page');
 
     searchPage = new SearchPage();
     await searchPage.navigateTo();
