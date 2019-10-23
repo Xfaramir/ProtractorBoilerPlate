@@ -42,6 +42,7 @@ describe('Search Page', () => {
     await searchPage.expectElement(searchPage.searchPaginationButton);
     await searchPage.scrollNearest(searchPage.searchPaginationButton);
     await searchPage.searchPaginationButton.click();
+    await searchPage.expectVisibility(searchPage.searchPaginationButton);
   });
 
   afterEach(async () => {
