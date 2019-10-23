@@ -65,7 +65,7 @@ export default class BasePage {
     await browser.wait(EC.presenceOf(elem), 15000);
   }
   async expectVisibility(elem) {
-    await browser.wait(EC.visibilityOf(elem));
+    await browser.wait(EC.visibilityOf(elem), 10000);
   }
 
   async expectInVisibility(elem) {

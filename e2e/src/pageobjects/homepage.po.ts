@@ -32,7 +32,7 @@ export class HomePage extends BasePage {
     this.header = element(
       by.js(() => {
         return document.querySelector(
-          'div.jss107 > div.jss113 > div:nth-child(1) > div > div:nth-child(4) > div > div > div > a > div'
+          'div:nth-child(1) > div > div:nth-child(4) > div > div > div > a > div'
         );
       })
     );
@@ -47,25 +47,35 @@ export class HomePage extends BasePage {
 
     this.leaderboardButton = element(by.css('.jss276 h2'));
 
-    this.pgaOfAmericaHeadline = element(by.css('.jss330 p'));
+    this.pgaOfAmericaHeadline = element(
+      by.css(
+        'div.MuiBox-root.jss106 > div > div.MuiContainer-root.MuiBox-root > span'
+      )
+    );
 
-    this.levelUpButton = element(by.css('.jss335 h6:nth-child(1)'));
-    this.connectButton = element(by.css('.jss335 h6:nth-child(2)'));
-    this.escapeButton = element(by.css('.jss335 h6:nth-child(3)'));
+    this.levelUpButton = element(
+      by.css('h6.MuiTypography-root.MuiTypography-subtitle2')
+    );
+    this.connectButton = element(by.css('.MuiBox-root>  h6:nth-child(2)'));
+    this.escapeButton = element(by.css('.MuiBox-root>  h6:nth-child(3)'));
 
     this.coachCarrouselImage = element(
-      by.css('.jss332 > div:nth-child(3) div:nth-child(3)')
+      by.css(
+        'div.MuiBox-root.jss106 > div > div > div:nth-child(3) > div > div:nth-child(3)'
+      )
     );
 
     this.coachOverlayVideoButton = element(by.css('use'));
 
     this.coachOverlayCloseButton = element(
-      by.css('svg.MuiSvgIcon-root.jss338 > path')
+      by.css('.MuiDialog-scrollPaper > div > button')
     );
 
-    this.topStoriesHeadline = element(by.css('.jss403 h4'));
+    this.topStoriesHeadline = element(by.css('div.MuiBox-root > h4'));
 
-    this.pgaReachHeadline = element(by.css('.jss438 > div > p'));
+    this.pgaReachHeadline = element(
+      by.css('div.MuiBox-root.jss106 > div > div > div > span')
+    );
     this.footer = element(
       by.js(() => {
         return document.querySelector(

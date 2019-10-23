@@ -9,14 +9,25 @@ const screenShotUtils = require('protractor-screenshot-utils')
   .ProtractorScreenShotUtils;
 
 exports.config = {
+  directConnect: false,
+  seleniumAddress: 'http://localhost:4444/wd/hub',
+  baseUrl: 'https://www.protractortest.org',
+  SELENIUM_PROMISE_MANAGER: false,
+  framework: 'jasmine',
+  jasmineNodeOpts: {
+    showColors: true,
+    defaultTimeoutInterval: 90000,
+    print: function() {}
+  },
   allScriptsTimeout: 15000,
   // specs: ['./src/specs/**/*.e2e-spec.ts'],
   suites: {
     homePage: [
       'src/specs/home/home.e2e-spec.ts',
-      'src/specs/home/homeSearch.e2e-spec.ts'
+      'src/specs/home/NavLinks.e2e-spec.ts'
     ],
-    playPage: 'src/specs/play/play.e2e-spec.ts'
+    playPage: 'src/specs/play/play.e2e-spec.ts',
+    searchPage: 'src/specs/Search.e2e-spec.ts'
   },
   capabilities: {
     browserName: 'chrome'
@@ -88,16 +99,7 @@ exports.config = {
   //     }
   //   }
   // ],
-  directConnect: false,
-  seleniumAddress: 'http://localhost:4444/wd/hub',
-  baseUrl: 'https://www.protractortest.org',
-  SELENIUM_PROMISE_MANAGER: false,
-  framework: 'jasmine',
-  jasmineNodeOpts: {
-    showColors: true,
-    defaultTimeoutInterval: 90000,
-    print: function() {}
-  },
+
   onPrepare() {
     browser.driver
       .manage()

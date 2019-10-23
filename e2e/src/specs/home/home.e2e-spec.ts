@@ -7,7 +7,7 @@ import {
   ElementFinder,
   protractor
 } from 'protractor';
-const EC = protractor.ExpectedConditions;
+
 const page = new HomePage();
 
 describe('Home Page', () => {
@@ -33,9 +33,10 @@ describe('Home Page', () => {
   });
 
   it('should coach pga of america headline options', async () => {
+    await page.expectVisibility(page.pgaOfAmericaHeadline);
     await page.scrollCenter(page.pgaOfAmericaHeadline);
     await expect(page.pgaOfAmericaHeadline.getText()).toEqual(
-      'Our members bring you their wealth of real-world, championship-level understanding of the game. Armed with a PGA Coach by your side, make leveling up a breeze.'
+      'THE PGA OF AMERICA'
     );
   });
   it('should focus 1 carrousel slide group option Level up', async () => {
@@ -43,11 +44,13 @@ describe('Home Page', () => {
   });
 
   it('should switch carrousel category', async () => {
+    await page.expectClickable(page.connectButton);
     await page.connectButton.click();
     await page.scrollCenter(page.levelUpButton);
   });
 
   it('should open overlay', async () => {
+    await page.expectClickable(page.coachCarrouselImage);
     await page.coachCarrouselImage.click();
   });
 
@@ -66,9 +69,7 @@ describe('Home Page', () => {
 
   it('should display pga reach', async () => {
     const pgareachText = await page.pgaReachHeadline.getText();
-    expect(pgareachText).toEqual(
-      'PGA REACH is the 501(c)(3) charitable foundation of the PGA of America. The mission of PGA REACH is to positively impact the lives of youth, military, and diverse populations by enabling access to PGA Professionals, PGA Sections and the game of golf.'
-    );
+    expect(pgareachText).toEqual('PGA REACH');
     await page.scrollCenter(page.pgaReachHeadline);
   });
 

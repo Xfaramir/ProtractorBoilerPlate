@@ -1,10 +1,8 @@
 import { PlayPage } from '../../pageobjects/playpage.po';
 import { browser, logging, element, by } from 'protractor';
-import { SearchPage } from '../../pageobjects/searchpage.po';
 
 describe('Play Page', () => {
   const page = new PlayPage();
-  const searchpage = new SearchPage();
 
   beforeAll(async () => {
     console.log('Starting Play Test');
@@ -29,17 +27,22 @@ describe('Play Page', () => {
   });
 
   it('should Browse Courses by State', async () => {
+    await page.scrollEnd(page.playSearchBar);
+    await page.playSearchBar.sendKeys(' state');
     await page.sendEnter();
     await browser.sleep(2000);
   });
 
   it('should Browse Courses by City', async () => {
-    // await page.expectVisibility(searchpage.searchBar);
-    await searchpage.searchBar.click();
-    await searchpage.searchBar.sendKeys('texas');
+    await page.navigateTo();
+    await page.playSearchBar.sendKeys('city');
+    await page.sendEnter();
+    await browser.sleep(2000);
   });
 
   it('should access course facility', async () => {
+    await page.navigateTo();
+    await page.playSearchBar.sendKeys('facility');
     await page.sendEnter();
     await page.expectElement(page.playFacility);
     await page.playFacility.click();
