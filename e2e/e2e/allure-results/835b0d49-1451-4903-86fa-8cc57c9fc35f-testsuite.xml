@@ -1,0 +1,91 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1571839317697' stop='1571839317699'>
+    <name>Play Page</name>
+    <title>Play Page</title>
+    <test-cases>
+        <test-case start='1571839317697' status='pending' stop='1571839317697'>
+            <name>should see travel destinations and packages</name>
+            <title>should see travel destinations and packages</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571839317697' status='pending' stop='1571839317699'>
+            <name>should see featured course</name>
+            <title>should see featured course</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571839317699' status='pending' stop='1571839317699'>
+            <name>should display list of states in play search</name>
+            <title>should display list of states in play search</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571839317699' status='pending' stop='1571839317699'>
+            <name>should Browse Courses by State</name>
+            <title>should Browse Courses by State</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571839317699' status='pending' stop='1571839317699'>
+            <name>should Browse Courses by City</name>
+            <title>should Browse Courses by City</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571839317699' status='pending' stop='1571839317699'>
+            <name>should access course facility</name>
+            <title>should access course facility</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571839317699' status='pending' stop='1571839317699'>
+            <name>test</name>
+            <title>test</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

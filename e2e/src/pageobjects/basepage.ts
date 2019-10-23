@@ -6,13 +6,15 @@ const EC = protractor.ExpectedConditions;
 export default class BasePage {
   url: string;
   bannerGDRP: ElementFinder;
+
   searchNavButton: ElementFinder;
   searchNavInput: ElementFinder;
+  leaderboardButton: ElementFinder;
   constructor() {
     this.bannerGDRP = element(
       by.css('div.MuiDrawer-root.MuiDrawer-docked button')
     );
-
+    this.leaderboardButton = element(by.css('.jss276 h2'));
     this.searchNavButton = element(by.css('header button'));
 
     this.searchNavInput = element(by.css('nav input'));
@@ -53,7 +55,6 @@ export default class BasePage {
   }
 
   async expectAndFocus(elem) {
-    await browser.isElementPresent(elem);
     await browser
       .actions()
       .mouseMove(elem)
@@ -61,17 +62,17 @@ export default class BasePage {
   }
 
   async expectElement(elem) {
-    await browser.wait(EC.presenceOf(elem), 10000);
+    await browser.wait(EC.presenceOf(elem), 15000);
   }
   async expectVisibility(elem) {
-    await browser.wait(EC.visibilityOf(elem), 5000);
+    await browser.wait(EC.visibilityOf(elem));
   }
 
   async expectClickable(elem) {
-    await browser.wait(EC.elementToBeClickable(elem), 5000);
+    await browser.wait(EC.elementToBeClickable(elem));
   }
-  async expectAndScroll(elem) {
-    await browser.wait(EC.presenceOf(elem), 10000);
+  async expectAndScroll(elem: ElementFinder) {
+    await browser.wait(EC.presenceOf(elem), 15000);
     await browser.executeScript(
       'arguments[0].scrollIntoView(true)',
       elem.getWebElement()

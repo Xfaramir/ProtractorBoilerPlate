@@ -12,12 +12,11 @@ exports.config = {
   allScriptsTimeout: 15000,
   // specs: ['./src/specs/**/*.e2e-spec.ts'],
   suites: {
-    homepage: 'src/specs/home/home.e2e-spec.ts',
-    homeSearch: 'src/specs/home/*.e2e-spec.ts',
-    search: [
-      'tests/e2e/contact_search/**/*Spec.js',
-      'tests/e2e/venue_search/**/*Spec.js'
-    ]
+    homePage: [
+      'src/specs/home/home.e2e-spec.ts',
+      'src/specs/home/homeSearch.e2e-spec.ts'
+    ],
+    playPage: 'src/specs/play/play.e2e-spec.ts'
   },
   capabilities: {
     browserName: 'chrome'
@@ -25,7 +24,7 @@ exports.config = {
   // multiCapabilities: [
   //   {
   //     name: 'chrome',
-  //     browserName: 'chrome',
+  //     browserName: 'chrome',s
   //     count: 1,
   //     'goog:chromeOptions': {
   //       args: [
@@ -89,14 +88,14 @@ exports.config = {
   //     }
   //   }
   // ],
-  directConnect: true,
+  directConnect: false,
   seleniumAddress: 'http://localhost:4444/wd/hub',
   baseUrl: 'https://www.protractortest.org',
   SELENIUM_PROMISE_MANAGER: false,
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,
-    defaultTimeoutInterval: 30000,
+    defaultTimeoutInterval: 90000,
     print: function() {}
   },
   onPrepare() {

@@ -2,12 +2,10 @@ import { SearchPage } from '../../pageobjects/searchpage.po';
 import { browser, logging, element, by, protractor } from 'protractor';
 
 describe('Search Page', () => {
-  let searchPage: SearchPage;
+  const searchPage = new SearchPage();
 
   beforeAll(async () => {
     console.log('Starting Search page');
-
-    searchPage = new SearchPage();
     await searchPage.navigateTo();
   });
 
@@ -20,20 +18,24 @@ describe('Search Page', () => {
 
   it('should clear search results', async () => {
     await searchPage.sendEnter();
-    await searchPage.expectClickable(searchPage.searchClearButton);
+    await searchPage.expectElement(searchPage.searchClearButton);
+    await searchPage.sendEnter();
+    // await searchPage.expectClickable(searchPage.searchClearButton);
     await searchPage.searchClearButton.click();
   });
 
   it('should do another query from fixed search bar', async () => {
     await searchPage.searchBar.sendKeys('pga');
+    await searchPage.expectElement(searchPage.searchBar);
     await searchPage.sendEnter();
-    await searchPage.expectVisibility(searchPage.searchPaginationButton);
+    // await searchPage.expectVisibility(searchPage.searchPaginationButton);
   });
 
   it('should do click on next pagination button', async () => {
+    await searchPage.expectElement(searchPage.searchPaginationButton);
     await searchPage.searchPaginationButton.click();
-    await searchPage.expectVisibility(searchPage.searchPaginationButton);
-    await searchPage.scrollCenter(searchPage.searchPaginationButton);
+    // await searchPage.expectVisibility(searchPage.searchPaginationButton);
+    // await searchPage.scrollCenter(searchPage.searchPaginationButton);
   });
 
   afterEach(async () => {
@@ -42,10 +44,10 @@ describe('Search Page', () => {
       .manage()
       .logs()
       .get(logging.Type.BROWSER);
-    // expect(logs).not.toContain(
-    //   jasmine.objectContaining({
-    //     level: logging.Level.SEVERE
-    //   } as logging.Entry)
-    // );
+    expect(logs).not.toContain(
+      jasmine.objectContaining({
+        level: logging.Level.SEVERE
+      } as logging.Entry)
+    );
   });
 });

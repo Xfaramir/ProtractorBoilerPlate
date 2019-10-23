@@ -1,0 +1,142 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1571796944251' stop='1571796947154'>
+    <name>Search Page</name>
+    <title>Search Page</title>
+    <test-cases>
+        <test-case start='1571796945029' status='passed' stop='1571796945748'>
+            <name>should do a search</name>
+            <title>should do a search</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='1ffe37ad-edb9-4940-b3a5-5757fdeb5eed-attachment.png' type='image/png' size='288697'/>
+            </attachments>
+        </test-case>
+        <test-case start='1571796945748' status='failed' stop='1571796946261'>
+            <name>should clear search results</name>
+            <title>should clear search results</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='56417eec-7f0f-41a5-a3a4-9524c105f6a2-attachment.png' type='image/png' size='155785'/>
+            </attachments>
+            <failure>
+                <message>Failed: Cannot read property 'elementToBeClickable' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'elementToBeClickable' of undefined
+                    at SearchPage.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/pageobjects/basePage.ts:71:27)
+                    at step (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:136:27)
+                    at Object.next (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:117:57)
+                    at /Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:110:75
+                    at new Promise (&lt;anonymous>)
+                    at Object.__awaiter (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:106:16)
+                    at SearchPage.BasePage.expectClickable (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/pageobjects/basePage.ts:129:24)
+                    at Object.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/homeSearch.e2e-spec.ts:23:22)
+                    at step (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:136:27)
+                    at Object.next (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:117:57)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/homeSearch.e2e-spec.ts:21:3)
+                    at addSpecsToSuite (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/homeSearch.e2e-spec.ts:4:1)
+                    at Module._compile (internal/modules/cjs/loader.js:688:30)
+                    at Module.m._compile (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/ts-node/src/index.ts:439:23)
+                    at Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+                    at Object.require.extensions.(anonymous function) [as .ts] (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/ts-node/src/index.ts:442:12)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571796946261' status='failed' stop='1571796946699'>
+            <name>should do another query from fixed search bar</name>
+            <title>should do another query from fixed search bar</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='987dac34-1bfd-4f8f-97e0-9c76f1e56b87-attachment.png' type='image/png' size='156079'/>
+            </attachments>
+            <failure>
+                <message>Failed: No element found using locator: By(css selector, .jss106 input)</message>
+                <stack-trace>NoSuchElementError: No element found using locator: By(css selector, .jss106 input)
+                    at elementArrayFinder.getWebElements.then (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/built/element.js:814:27)
+                    at process._tickCallback (internal/process/next_tick.js:68:7)Error
+                    at ElementArrayFinder.applyAction_ (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/built/element.js:459:27)
+                    at ElementArrayFinder.(anonymous function).args [as sendKeys] (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/built/element.js:91:29)
+                    at ElementFinder.(anonymous function).args [as sendKeys] (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/built/element.js:831:22)
+                    at Object.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/homeSearch.e2e-spec.ts:28:32)
+                    at step (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:136:27)
+                    at Object.next (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:117:57)
+                    at /Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:110:75
+                    at new Promise (&lt;anonymous>)
+                    at Object.__awaiter (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:106:16)
+                    at UserContext.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/homeSearch.e2e-spec.ts:27:55)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/homeSearch.e2e-spec.ts:27:3)
+                    at addSpecsToSuite (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/homeSearch.e2e-spec.ts:4:1)
+                    at Module._compile (internal/modules/cjs/loader.js:688:30)
+                    at Module.m._compile (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/ts-node/src/index.ts:439:23)
+                    at Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+                    at Object.require.extensions.(anonymous function) [as .ts] (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/ts-node/src/index.ts:442:12)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571796946699' status='failed' stop='1571796947153'>
+            <name>should do click on next pagination button</name>
+            <title>should do click on next pagination button</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='a0175108-5f1a-4bf6-b28f-3c3cf9092dbf-attachment.png' type='image/png' size='156079'/>
+            </attachments>
+            <failure>
+                <message>Failed: No element found using locator: By(css selector, .jss106  button:nth-child(10))</message>
+                <stack-trace>NoSuchElementError: No element found using locator: By(css selector, .jss106  button:nth-child(10))
+                    at elementArrayFinder.getWebElements.then (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/built/element.js:814:27)
+                    at process._tickCallback (internal/process/next_tick.js:68:7)Error
+                    at ElementArrayFinder.applyAction_ (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/built/element.js:459:27)
+                    at ElementArrayFinder.(anonymous function).args [as click] (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/built/element.js:91:29)
+                    at ElementFinder.(anonymous function).args [as click] (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/built/element.js:831:22)
+                    at Object.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/homeSearch.e2e-spec.ts:34:45)
+                    at step (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:136:27)
+                    at Object.next (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:117:57)
+                    at /Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:110:75
+                    at new Promise (&lt;anonymous>)
+                    at Object.__awaiter (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:106:16)
+                    at UserContext.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/homeSearch.e2e-spec.ts:33:51)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/homeSearch.e2e-spec.ts:33:3)
+                    at addSpecsToSuite (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/homeSearch.e2e-spec.ts:4:1)
+                    at Module._compile (internal/modules/cjs/loader.js:688:30)
+                    at Module.m._compile (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/ts-node/src/index.ts:439:23)
+                    at Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+                    at Object.require.extensions.(anonymous function) [as .ts] (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/ts-node/src/index.ts:442:12)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

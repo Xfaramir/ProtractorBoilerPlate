@@ -1,12 +1,18 @@
 import { HomePage } from '../../pageobjects/homePage.po';
-import { browser, logging, element, by } from 'protractor';
+import {
+  browser,
+  logging,
+  element,
+  by,
+  ElementFinder,
+  protractor
+} from 'protractor';
+const EC = protractor.ExpectedConditions;
+const page = new HomePage();
 
 describe('Home Page', () => {
-  let page: HomePage;
-
   beforeAll(async () => {
     console.log('Starting Home Test');
-    page = new HomePage();
     await page.navigateTo();
   });
 
@@ -19,6 +25,7 @@ describe('Home Page', () => {
   it('should close gdrp banner', async () => {
     await page.bannerGDRP.click();
   });
+
   it('should display leaderboard', async () => {
     await page.expectAndScroll(page.leaderboardButton);
   });
@@ -79,10 +86,10 @@ describe('Home Page', () => {
       .manage()
       .logs()
       .get(logging.Type.BROWSER);
-    // expect(logs).not.toContain(
-    //   jasmine.objectContaining({
-    //     level: logging.Level.SEVERE
-    //   } as logging.Entry)
-    // );
+    expect(logs).not.toContain(
+      jasmine.objectContaining({
+        level: logging.Level.SEVERE
+      } as logging.Entry)
+    );
   });
 });

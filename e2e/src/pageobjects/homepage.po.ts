@@ -2,7 +2,7 @@ import { browser, by, element, ElementFinder } from 'protractor';
 import BasePage from './basePage';
 
 browser.waitForAngularEnabled(false);
-browser.ignoreSynchronization = true;
+// browser.ignoreSynchronization = true;
 export class HomePage extends BasePage {
   leaderboardButton: ElementFinder;
   coachImage: ElementFinder;
@@ -26,12 +26,13 @@ export class HomePage extends BasePage {
 
   constructor() {
     super();
+
     this.url = 'https://d2eam07qccllcf.cloudfront.net/';
 
     this.header = element(
       by.js(() => {
         return document.querySelector(
-          '#__next > div > div.MuiBox-root.jss106 > div.jss107 > div.jss113 > div:nth-child(1) > div > div:nth-child(4) > div > div > div > a > div'
+          'div.jss107 > div.jss113 > div:nth-child(1) > div > div:nth-child(4) > div > div > div > a > div'
         );
       })
     );

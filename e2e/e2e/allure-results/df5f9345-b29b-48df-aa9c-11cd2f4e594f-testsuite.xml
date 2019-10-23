@@ -1,0 +1,176 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1571837595148' stop='1571837602564'>
+    <name>Home Page</name>
+    <title>Home Page</title>
+    <test-cases>
+        <test-case start='1571837599781' status='failed' stop='1571837602550'>
+            <name>should display leaderboard</name>
+            <title>should display leaderboard</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='c88f9998-f782-45b0-9382-f97389531288-attachment.png' type='image/png' size='4050126'/>
+            </attachments>
+            <failure>
+                <message>Failed: javascript error: arguments[0].scrprotracollIntoView is not a function
+                  (Session info: chrome=78.0.3904.70)
+                  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Mac OS X 10.14.6 x86_64)</message>
+                <stack-trace>JavascriptError: javascript error: arguments[0].scrprotracollIntoView is not a function
+                  (Session info: chrome=78.0.3904.70)
+                  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Mac OS X 10.14.6 x86_64)
+                    at Object.checkLegacyResponse (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/error.js:546:15)
+                    at parseHttpResponse (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:509:13)
+                    at doSend.then.response (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/http.js:441:30)
+                    at process._tickCallback (internal/process/next_tick.js:68:7)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/home.e2e-spec.ts:29:3)
+                    at addSpecsToSuite (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/home.e2e-spec.ts:13:1)
+                    at Module._compile (internal/modules/cjs/loader.js:688:30)
+                    at Module.m._compile (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/ts-node/src/index.ts:439:23)
+                    at Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+                    at Object.require.extensions.(anonymous function) [as .ts] (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/ts-node/src/index.ts:442:12)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571837602550' status='pending' stop='1571837602552'>
+            <name>should display headline</name>
+            <title>should display headline</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571837602552' status='pending' stop='1571837602553'>
+            <name>should close gdrp banner</name>
+            <title>should close gdrp banner</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571837602553' status='pending' stop='1571837602554'>
+            <name>should coach pga of america headline options</name>
+            <title>should coach pga of america headline options</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571837602554' status='pending' stop='1571837602555'>
+            <name>should focus 1 carrousel slide group option Level up</name>
+            <title>should focus 1 carrousel slide group option Level up</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571837602555' status='pending' stop='1571837602556'>
+            <name>should switch carrousel category</name>
+            <title>should switch carrousel category</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571837602556' status='pending' stop='1571837602557'>
+            <name>should open overlay</name>
+            <title>should open overlay</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571837602557' status='pending' stop='1571837602558'>
+            <name>should  play video</name>
+            <title>should  play video</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571837602558' status='pending' stop='1571837602559'>
+            <name>should close overlay and display headline top series</name>
+            <title>should close overlay and display headline top series</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571837602559' status='pending' stop='1571837602560'>
+            <name>should display pga reach</name>
+            <title>should display pga reach</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571837602560' status='pending' stop='1571837602562'>
+            <name>should display footer</name>
+            <title>should display footer</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571837602562' status='pending' stop='1571837602563'>
+            <name>test</name>
+            <title>test</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

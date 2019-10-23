@@ -3,13 +3,11 @@ import { browser, logging, element, by } from 'protractor';
 import { SearchPage } from '../../pageobjects/searchpage.po';
 
 describe('Play Page', () => {
-  let page: PlayPage;
-  let searchpage: SearchPage;
+  const page = new PlayPage();
+  const searchpage = new SearchPage();
 
   beforeAll(async () => {
     console.log('Starting Play Test');
-    page = new PlayPage();
-    searchpage = new SearchPage();
     await page.navigateTo();
   });
 
@@ -36,7 +34,7 @@ describe('Play Page', () => {
   });
 
   it('should Browse Courses by City', async () => {
-    await page.expectVisibility(searchpage.searchBar);
+    // await page.expectVisibility(searchpage.searchBar);
     await searchpage.searchBar.click();
     await searchpage.searchBar.sendKeys('texas');
   });
@@ -59,10 +57,10 @@ describe('Play Page', () => {
       .manage()
       .logs()
       .get(logging.Type.BROWSER);
-    // expect(logs).not.toContain(
-    //   jasmine.objectContaining({
-    //     level: logging.Level.SEVERE
-    //   } as logging.Entry)
-    // );
+    expect(logs).not.toContain(
+      jasmine.objectContaining({
+        level: logging.Level.SEVERE
+      } as logging.Entry)
+    );
   });
 });

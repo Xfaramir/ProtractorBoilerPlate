@@ -1,0 +1,241 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1571782168988' stop='1571782191092'>
+    <name>Home Page</name>
+    <title>Home Page</title>
+    <test-cases>
+        <test-case start='1571782177172' status='passed' stop='1571782179638'>
+            <name>should display headline</name>
+            <title>should display headline</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='27b3d5e8-4002-42d4-8dfb-845be660a9aa-attachment.png' type='image/png' size='3725343'/>
+            </attachments>
+        </test-case>
+        <test-case start='1571782179638' status='passed' stop='1571782182262'>
+            <name>should close gdrp banner</name>
+            <title>should close gdrp banner</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='aa6180ba-70b3-419b-9946-f052445d7236-attachment.png' type='image/png' size='4057140'/>
+            </attachments>
+        </test-case>
+        <test-case start='1571782182262' status='failed' stop='1571782184781'>
+            <name>should display leaderboard</name>
+            <title>should display leaderboard</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='5e3eee3f-9ce6-41ca-b6c0-050604fa729f-attachment.png' type='image/png' size='4056897'/>
+            </attachments>
+            <failure>
+                <message>Failed: Cannot read property 'presenceOf' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'presenceOf' of undefined
+                    at HomePage.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/pageobjects/basePage.ts:74:27)
+                    at step (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:136:27)
+                    at Object.next (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:117:57)
+                    at /Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:110:75
+                    at new Promise (&lt;anonymous>)
+                    at Object.__awaiter (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:106:16)
+                    at HomePage.BasePage.expectAndScroll (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/pageobjects/basePage.ts:141:24)
+                    at Object.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/home.e2e-spec.ts:23:16)
+                    at step (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:136:27)
+                    at Object.next (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:117:57)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/home.e2e-spec.ts:22:3)
+                    at addSpecsToSuite (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/home.e2e-spec.ts:4:1)
+                    at Module._compile (internal/modules/cjs/loader.js:688:30)
+                    at Module.m._compile (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/ts-node/src/index.ts:439:23)
+                    at Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+                    at Object.require.extensions.(anonymous function) [as .ts] (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/ts-node/src/index.ts:442:12)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571782184781' status='passed' stop='1571782185325'>
+            <name>should coach pga of america headline options</name>
+            <title>should coach pga of america headline options</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='f3635e53-9ba8-4469-b34e-0c765950db57-attachment.png' type='image/png' size='153457'/>
+            </attachments>
+        </test-case>
+        <test-case start='1571782185325' status='passed' stop='1571782186202'>
+            <name>should focus 1 carrousel slide group option Level up</name>
+            <title>should focus 1 carrousel slide group option Level up</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='9f4bb3e9-5a18-4f6e-b965-6822eaeb5ffe-attachment.png' type='image/png' size='1106328'/>
+            </attachments>
+        </test-case>
+        <test-case start='1571782186202' status='passed' stop='1571782186779'>
+            <name>should switch carrousel category</name>
+            <title>should switch carrousel category</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='133ab48e-221b-4b0a-a7ff-bfcbd0c3f19e-attachment.png' type='image/png' size='256263'/>
+            </attachments>
+        </test-case>
+        <test-case start='1571782186779' status='passed' stop='1571782187321'>
+            <name>should open overlay</name>
+            <title>should open overlay</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='ee391965-19e3-4df5-b7b4-6d2a11035c30-attachment.png' type='image/png' size='105148'/>
+            </attachments>
+        </test-case>
+        <test-case start='1571782187321' status='passed' stop='1571782189773'>
+            <name>should  play video</name>
+            <title>should  play video</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='683ff903-c94e-466b-8d66-278c9d2bd6e0-attachment.png' type='image/png' size='19712'/>
+            </attachments>
+        </test-case>
+        <test-case start='1571782189773' status='failed' stop='1571782190178'>
+            <name>should close overlay and display headline top series</name>
+            <title>should close overlay and display headline top series</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='9cba3ba1-968a-4015-8605-ece4108a2be2-attachment.png' type='image/png' size='19712'/>
+            </attachments>
+            <failure>
+                <message>Failed: Cannot read property 'elementToBeClickable' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'elementToBeClickable' of undefined
+                    at HomePage.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/pageobjects/basePage.ts:71:27)
+                    at step (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:136:27)
+                    at Object.next (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:117:57)
+                    at /Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:110:75
+                    at new Promise (&lt;anonymous>)
+                    at Object.__awaiter (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:106:16)
+                    at HomePage.BasePage.expectClickable (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/pageobjects/basePage.ts:129:24)
+                    at Object.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/home.e2e-spec.ts:51:16)
+                    at step (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:136:27)
+                    at Object.next (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:117:57)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/home.e2e-spec.ts:50:3)
+                    at addSpecsToSuite (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/home.e2e-spec.ts:4:1)
+                    at Module._compile (internal/modules/cjs/loader.js:688:30)
+                    at Module.m._compile (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/ts-node/src/index.ts:439:23)
+                    at Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+                    at Object.require.extensions.(anonymous function) [as .ts] (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/ts-node/src/index.ts:442:12)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571782190178' status='failed' stop='1571782190653'>
+            <name>should display pga reach</name>
+            <title>should display pga reach</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='29ca16fd-b611-45d6-802d-bdcdc927db71-attachment.png' type='image/png' size='19712'/>
+            </attachments>
+            <failure>
+                <message>Expected '' to equal 'PGA REACH is the 501(c)(3) charitable foundation of the PGA of America. The mission of PGA REACH is to positively impact the lives of youth, military, and diverse populations by enabling access to PGA Professionals, PGA Sections and the game of golf.'.</message>
+                <stack-trace>Error: Failed expectation
+                    at Object.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/home.e2e-spec.ts:60:26)
+                    at step (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:136:27)
+                    at Object.next (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:117:57)
+                    at fulfilled (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:107:62)
+                    at process._tickCallback (internal/process/next_tick.js:68:7)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571782190653' status='failed' stop='1571782191091'>
+            <name>should display footer</name>
+            <title>should display footer</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='ff5f958b-b9c4-4791-b503-06730846e82f-attachment.png' type='image/png' size='19712'/>
+            </attachments>
+            <failure>
+                <message>Expected '' to equal 'EXPLORE'.</message>
+                <stack-trace>Error: Failed expectation
+                    at Object.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/home.e2e-spec.ts:68:24)
+                    at step (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:136:27)
+                    at Object.next (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:117:57)
+                    at fulfilled (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:107:62)
+                    at process._tickCallback (internal/process/next_tick.js:68:7)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571782191091' status='pending' stop='1571782191091'>
+            <name>test</name>
+            <title>test</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Temporarily disabled with xit</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

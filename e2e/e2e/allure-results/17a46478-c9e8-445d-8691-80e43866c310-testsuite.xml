@@ -1,0 +1,203 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1571796403977' stop='1571796419715'>
+    <name>Play Page</name>
+    <title>Play Page</title>
+    <test-cases>
+        <test-case start='1571796410409' status='failed' stop='1571796412689'>
+            <name>should see travel destinations and packages</name>
+            <title>should see travel destinations and packages</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='3d27977c-1c76-4259-b3f0-d1a2ced11c1e-attachment.png' type='image/png' size='3425813'/>
+            </attachments>
+            <failure>
+                <message>Failed: Cannot read property 'presenceOf' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'presenceOf' of undefined
+                    at PlayPage.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/pageobjects/basePage.ts:64:27)
+                    at step (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:136:27)
+                    at Object.next (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:117:57)
+                    at /Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:110:75
+                    at new Promise (&lt;anonymous>)
+                    at Object.__awaiter (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:106:16)
+                    at PlayPage.BasePage.expectElement (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/pageobjects/basePage.ts:105:24)
+                    at Object.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/play.e2e-spec.ts:19:16)
+                    at step (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:136:27)
+                    at Object.next (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:117:57)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/play.e2e-spec.ts:18:3)
+                    at addSpecsToSuite (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/play.e2e-spec.ts:5:1)
+                    at Module._compile (internal/modules/cjs/loader.js:688:30)
+                    at Module.m._compile (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/ts-node/src/index.ts:439:23)
+                    at Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+                    at Object.require.extensions.(anonymous function) [as .ts] (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/ts-node/src/index.ts:442:12)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571796412689' status='failed' stop='1571796414553'>
+            <name>should see featured course</name>
+            <title>should see featured course</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='5b51fe5b-0537-412f-b39d-2ba8ada47720-attachment.png' type='image/png' size='2966825'/>
+            </attachments>
+            <failure>
+                <message>Failed: Cannot read property 'presenceOf' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'presenceOf' of undefined
+                    at PlayPage.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/pageobjects/basePage.ts:64:27)
+                    at step (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:136:27)
+                    at Object.next (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:117:57)
+                    at /Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:110:75
+                    at new Promise (&lt;anonymous>)
+                    at Object.__awaiter (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:106:16)
+                    at PlayPage.BasePage.expectElement (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/pageobjects/basePage.ts:105:24)
+                    at Object.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/play.e2e-spec.ts:23:16)
+                    at step (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:136:27)
+                    at Object.next (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:117:57)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/play.e2e-spec.ts:22:3)
+                    at addSpecsToSuite (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/play.e2e-spec.ts:5:1)
+                    at Module._compile (internal/modules/cjs/loader.js:688:30)
+                    at Module.m._compile (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/ts-node/src/index.ts:439:23)
+                    at Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+                    at Object.require.extensions.(anonymous function) [as .ts] (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/ts-node/src/index.ts:442:12)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571796414553' status='passed' stop='1571796416425'>
+            <name>should display list of states in play search</name>
+            <title>should display list of states in play search</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='a40981c1-0b8e-483e-b58d-00cbda3fc72f-attachment.png' type='image/png' size='2533778'/>
+            </attachments>
+        </test-case>
+        <test-case start='1571796416425' status='passed' stop='1571796418916'>
+            <name>should Browse Courses by State</name>
+            <title>should Browse Courses by State</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='bdb1165b-883a-4d9e-8a77-7c25867bfa9e-attachment.png' type='image/png' size='173583'/>
+            </attachments>
+        </test-case>
+        <test-case start='1571796418916' status='failed' stop='1571796419314'>
+            <name>should Browse Courses by City</name>
+            <title>should Browse Courses by City</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='bf771866-9900-40fe-be75-6d8b053300a3-attachment.png' type='image/png' size='173583'/>
+            </attachments>
+            <failure>
+                <message>Failed: Cannot read property 'visibilityOf' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'visibilityOf' of undefined
+                    at PlayPage.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/pageobjects/basePage.ts:67:27)
+                    at step (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:136:27)
+                    at Object.next (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:117:57)
+                    at /Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:110:75
+                    at new Promise (&lt;anonymous>)
+                    at Object.__awaiter (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:106:16)
+                    at PlayPage.BasePage.expectVisibility (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/pageobjects/basePage.ts:117:24)
+                    at Object.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/play.e2e-spec.ts:39:16)
+                    at step (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:136:27)
+                    at Object.next (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:117:57)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/play.e2e-spec.ts:38:3)
+                    at addSpecsToSuite (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/play.e2e-spec.ts:5:1)
+                    at Module._compile (internal/modules/cjs/loader.js:688:30)
+                    at Module.m._compile (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/ts-node/src/index.ts:439:23)
+                    at Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+                    at Object.require.extensions.(anonymous function) [as .ts] (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/ts-node/src/index.ts:442:12)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571796419314' status='failed' stop='1571796419715'>
+            <name>should access course facility</name>
+            <title>should access course facility</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='24936b92-73af-440d-aeee-4cea62a88547-attachment.png' type='image/png' size='173583'/>
+            </attachments>
+            <failure>
+                <message>Failed: Cannot read property 'presenceOf' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'presenceOf' of undefined
+                    at PlayPage.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/pageobjects/basePage.ts:64:27)
+                    at step (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:136:27)
+                    at Object.next (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:117:57)
+                    at /Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:110:75
+                    at new Promise (&lt;anonymous>)
+                    at Object.__awaiter (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:106:16)
+                    at PlayPage.BasePage.expectElement (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/pageobjects/basePage.ts:105:24)
+                    at Object.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/play.e2e-spec.ts:46:16)
+                    at step (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:136:27)
+                    at Object.next (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/tslib/tslib.js:117:57)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/play.e2e-spec.ts:44:3)
+                    at addSpecsToSuite (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+                    at Env.describe (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+                    at describe (/Users/jbarrera/.nvm/versions/node/v10.13.0/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/e2e/src/specs/home/play.e2e-spec.ts:5:1)
+                    at Module._compile (internal/modules/cjs/loader.js:688:30)
+                    at Module.m._compile (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/ts-node/src/index.ts:439:23)
+                    at Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+                    at Object.require.extensions.(anonymous function) [as .ts] (/Users/jbarrera/Desktop/DavidAutomation/protractorHugeAutomation/node_modules/ts-node/src/index.ts:442:12)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571796419715' status='pending' stop='1571796419715'>
+            <name>test</name>
+            <title>test</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Temporarily disabled with xit</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

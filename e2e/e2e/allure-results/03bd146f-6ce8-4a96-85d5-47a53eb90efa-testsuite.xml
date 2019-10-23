@@ -1,0 +1,153 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1571838578663' stop='1571838587355'>
+    <name>Home Page</name>
+    <title>Home Page</title>
+    <test-cases>
+        <test-case start='1571838584838' status='passed' stop='1571838587341'>
+            <name>should display leaderboard</name>
+            <title>should display leaderboard</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='fe14cd97-6434-425d-91f9-b449b2f66b57-attachment.png' type='image/png' size='3713400'/>
+            </attachments>
+        </test-case>
+        <test-case start='1571838587342' status='pending' stop='1571838587343'>
+            <name>should display headline</name>
+            <title>should display headline</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571838587343' status='pending' stop='1571838587345'>
+            <name>should close gdrp banner</name>
+            <title>should close gdrp banner</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571838587345' status='pending' stop='1571838587346'>
+            <name>should coach pga of america headline options</name>
+            <title>should coach pga of america headline options</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571838587346' status='pending' stop='1571838587346'>
+            <name>should focus 1 carrousel slide group option Level up</name>
+            <title>should focus 1 carrousel slide group option Level up</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571838587346' status='pending' stop='1571838587347'>
+            <name>should switch carrousel category</name>
+            <title>should switch carrousel category</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571838587347' status='pending' stop='1571838587348'>
+            <name>should open overlay</name>
+            <title>should open overlay</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571838587348' status='pending' stop='1571838587349'>
+            <name>should  play video</name>
+            <title>should  play video</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571838587349' status='pending' stop='1571838587350'>
+            <name>should close overlay and display headline top series</name>
+            <title>should close overlay and display headline top series</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571838587350' status='pending' stop='1571838587351'>
+            <name>should display pga reach</name>
+            <title>should display pga reach</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571838587351' status='pending' stop='1571838587352'>
+            <name>should display footer</name>
+            <title>should display footer</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571838587353' status='pending' stop='1571838587354'>
+            <name>test</name>
+            <title>test</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

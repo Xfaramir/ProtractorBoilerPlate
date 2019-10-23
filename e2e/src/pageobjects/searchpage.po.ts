@@ -2,7 +2,7 @@ import { browser, by, element, ElementFinder } from 'protractor';
 import BasePage from './basePage';
 
 browser.waitForAngularEnabled(false);
-browser.ignoreSynchronization = true;
+// browser.ignoreSynchronization = true;
 
 export class SearchPage extends BasePage {
   searchClearButton: ElementFinder;

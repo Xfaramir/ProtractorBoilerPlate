@@ -1,0 +1,55 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1571839107494' stop='1571839107500'>
+    <name>Search Page</name>
+    <title>Search Page</title>
+    <test-cases>
+        <test-case start='1571839107494' status='pending' stop='1571839107495'>
+            <name>should do a search</name>
+            <title>should do a search</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571839107495' status='pending' stop='1571839107496'>
+            <name>should clear search results</name>
+            <title>should clear search results</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571839107496' status='pending' stop='1571839107497'>
+            <name>should do another query from fixed search bar</name>
+            <title>should do another query from fixed search bar</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1571839107497' status='pending' stop='1571839107499'>
+            <name>should do click on next pagination button</name>
+            <title>should do click on next pagination button</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>This test was ignored</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

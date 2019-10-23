@@ -1,0 +1,173 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1571838083290' stop='1571838107348'>
+    <name>Home Page</name>
+    <title>Home Page</title>
+    <test-cases>
+        <test-case start='1571838088522' status='passed' stop='1571838091242'>
+            <name>should display headline</name>
+            <title>should display headline</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='ac482708-35f3-40e9-85c3-f32b357a0ed0-attachment.png' type='image/png' size='4050349'/>
+            </attachments>
+        </test-case>
+        <test-case start='1571838091242' status='passed' stop='1571838093859'>
+            <name>should close gdrp banner</name>
+            <title>should close gdrp banner</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='b1912040-43a1-4304-a765-3d2f20e6712f-attachment.png' type='image/png' size='4049558'/>
+            </attachments>
+        </test-case>
+        <test-case start='1571838093859' status='passed' stop='1571838096395'>
+            <name>should display leaderboard</name>
+            <title>should display leaderboard</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='3dc93a77-e925-480b-ae42-ffe93385b84f-attachment.png' type='image/png' size='4049247'/>
+            </attachments>
+        </test-case>
+        <test-case start='1571838096395' status='passed' stop='1571838096938'>
+            <name>should coach pga of america headline options</name>
+            <title>should coach pga of america headline options</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='9aae3a06-bd81-448e-8447-ab095b264266-attachment.png' type='image/png' size='153141'/>
+            </attachments>
+        </test-case>
+        <test-case start='1571838096938' status='passed' stop='1571838097819'>
+            <name>should focus 1 carrousel slide group option Level up</name>
+            <title>should focus 1 carrousel slide group option Level up</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='79fdcd3d-0aa6-4152-913a-3c873925fe1a-attachment.png' type='image/png' size='1113172'/>
+            </attachments>
+        </test-case>
+        <test-case start='1571838097819' status='passed' stop='1571838099118'>
+            <name>should switch carrousel category</name>
+            <title>should switch carrousel category</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='32b43596-7b59-4a16-baf9-c8752b4774b5-attachment.png' type='image/png' size='1689573'/>
+            </attachments>
+        </test-case>
+        <test-case start='1571838099118' status='passed' stop='1571838100693'>
+            <name>should open overlay</name>
+            <title>should open overlay</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='3ea5bf1f-5baa-43a4-bdf9-c13124bffab8-attachment.png' type='image/png' size='2225700'/>
+            </attachments>
+        </test-case>
+        <test-case start='1571838100693' status='passed' stop='1571838103739'>
+            <name>should  play video</name>
+            <title>should  play video</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='155e32e8-83b4-4f5d-a656-260e08c23dbe-attachment.png' type='image/png' size='1345948'/>
+            </attachments>
+        </test-case>
+        <test-case start='1571838103739' status='passed' stop='1571838105938'>
+            <name>should close overlay and display headline top series</name>
+            <title>should close overlay and display headline top series</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='240d6a12-bb46-48c0-89b2-2f104c5620d3-attachment.png' type='image/png' size='3211432'/>
+            </attachments>
+        </test-case>
+        <test-case start='1571838105938' status='passed' stop='1571838106919'>
+            <name>should display pga reach</name>
+            <title>should display pga reach</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='57a0fa26-3cca-4874-92cf-db8a431d2908-attachment.png' type='image/png' size='1514476'/>
+            </attachments>
+        </test-case>
+        <test-case start='1571838106919' status='passed' stop='1571838107346'>
+            <name>should display footer</name>
+            <title>should display footer</title>
+            <labels>
+                <label name='severity' value='Normal'/>
+            </labels>
+            <parameters>
+                <parameter kind='environment-variable' name='QA' value='David Barrera'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='0b2620e2-c17b-4fe5-8d9e-f326dea1b1d9-attachment.png' type='image/png' size='168518'/>
+            </attachments>
+        </test-case>
+        <test-case start='1571838107347' status='pending' stop='1571838107348'>
+            <name>test</name>
+            <title>test</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Temporarily disabled with xit</message>
+                <stack-trace></stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
