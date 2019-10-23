@@ -40,7 +40,7 @@ describe('Search Page', () => {
 
   it('should do click on next pagination button', async () => {
     await searchPage.expectElement(searchPage.searchPaginationButton);
-    await searchPage.scrollNearest(searchPage.searchPaginationButton);
+    await searchPage.scrollCenter(searchPage.searchPaginationButton);
     await searchPage.searchPaginationButton.click();
     await searchPage.expectVisibility(searchPage.searchPaginationButton);
   });
