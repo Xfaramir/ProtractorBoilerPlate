@@ -36,13 +36,13 @@ describe('Search Page', () => {
     await searchPage.expectVisibility(searchPage.bannerGDRP);
     await searchPage.bannerGDRP.click();
     await searchPage.expectInVisibility(searchPage.bannerGDRP);
-  }) */
-
+  });
+ */
   it('should do click on next pagination button', async () => {
     await searchPage.expectElement(searchPage.searchPaginationButton);
-    await searchPage.scrollCenter(searchPage.searchPaginationButton);
     await searchPage.searchPaginationButton.click();
     await searchPage.expectVisibility(searchPage.searchPaginationButton);
+    await searchPage.scrollCenter(searchPage.searchPaginationButton);
   });
 
   afterEach(async () => {
