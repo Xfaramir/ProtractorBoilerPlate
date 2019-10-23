@@ -9,7 +9,7 @@ const screenShotUtils = require('protractor-screenshot-utils')
   .ProtractorScreenShotUtils;
 
 exports.config = {
-  directConnect: true,
+  directConnect: false,
   seleniumAddress: 'http://localhost:4444/wd/hub',
   baseUrl: 'https://www.protractortest.org',
   SELENIUM_PROMISE_MANAGER: false,
