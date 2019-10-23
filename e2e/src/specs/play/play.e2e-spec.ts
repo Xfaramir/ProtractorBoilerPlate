@@ -42,11 +42,12 @@ describe('Play Page', () => {
 
   it('should access course facility', async () => {
     await page.navigateTo();
-    await page.playSearchBar.sendKeys('facility');
+    await page.playSearchBar.sendKeys('settlers-bay-golf-course');
     await page.sendEnter();
     await page.expectElement(page.playFacility);
     await page.playFacility.click();
     await browser.sleep(1000);
+    await page.scrollCenter(page.playFacilityCoaches);
   });
 
   xit('test', async () => {

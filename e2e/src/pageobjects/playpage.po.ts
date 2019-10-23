@@ -9,6 +9,7 @@ export class PlayPage extends BasePage {
   playTravelDestination: ElementFinder;
   playFeatureCourse: ElementFinder;
   playFacility: ElementFinder;
+  playFacilityCoaches: ElementFinder;
   constructor() {
     super();
     this.url = 'https://d2eam07qccllcf.cloudfront.net/play';
@@ -20,6 +21,7 @@ export class PlayPage extends BasePage {
     this.playFacility = element(
       by.css('.jss434 div:nth-child(3) .MuiGrid-root :nth-child(1) > a')
     );
+    this.playFacilityCoaches = element(by.css('div.MuiBox-root > h5'));
   }
 
   async navigateTo(): Promise<any> {

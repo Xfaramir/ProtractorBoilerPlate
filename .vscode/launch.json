@@ -9,7 +9,11 @@
       "request": "launch",
       "name": "Launch Program",
       "program": "${workspaceRoot}/node_modules/protractor/bin/protractor",
-      "args": ["${workspaceRoot}/e2e/protractor.conf.js", "--suite", "playPage"]
+      "args": [
+        "${workspaceRoot}/e2e/protractor.conf.js",
+        "--suite",
+        "learnPage"
+      ]
     }
   ]
 }

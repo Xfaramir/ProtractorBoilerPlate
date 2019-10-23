@@ -1,4 +1,4 @@
-import { HomePage } from '../../pageobjects/homePage.po';
+import { HomePage } from '../../pageobjects/homepage.po';
 import {
   browser,
   logging,

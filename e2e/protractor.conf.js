@@ -9,7 +9,7 @@ const screenShotUtils = require('protractor-screenshot-utils')
   .ProtractorScreenShotUtils;
 
 exports.config = {
-  directConnect: false,
+  directConnect: true,
   seleniumAddress: 'http://localhost:4444/wd/hub',
   baseUrl: 'https://www.protractortest.org',
   SELENIUM_PROMISE_MANAGER: false,
@@ -27,7 +27,8 @@ exports.config = {
       'src/specs/home/NavLinks.e2e-spec.ts'
     ],
     playPage: 'src/specs/play/play.e2e-spec.ts',
-    searchPage: 'src/specs/Search.e2e-spec.ts'
+    searchPage: 'src/specs/Search.e2e-spec.ts',
+    learnPage: 'src/specs/learn/learn.e2e-spec.ts'
   },
   capabilities: {
     browserName: 'chrome'
