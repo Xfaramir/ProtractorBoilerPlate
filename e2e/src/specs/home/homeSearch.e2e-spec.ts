@@ -26,13 +26,13 @@ describe('Search Page', () => {
 
   it('should do another query from fixed search bar', async () => {
     await searchPage.searchBar.sendKeys('pga');
-    await searchPage.expectElement(searchPage.searchBar);
+    await searchPage.expectVisibility(searchPage.searchBar);
     await searchPage.sendEnter();
     // await searchPage.expectVisibility(searchPage.searchPaginationButton);
   });
 
   it('should do click on next pagination button', async () => {
-    await searchPage.expectElement(searchPage.searchPaginationButton);
+    await searchPage.expectVisibility(searchPage.searchPaginationButton);
     await searchPage.searchPaginationButton.click();
     // await searchPage.expectVisibility(searchPage.searchPaginationButton);
     // await searchPage.scrollCenter(searchPage.searchPaginationButton);

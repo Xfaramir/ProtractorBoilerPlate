@@ -23,7 +23,9 @@ describe('Home Page', () => {
   });
 
   it('should close gdrp banner', async () => {
+    await page.expectVisibility(page.bannerGDRP);
     await page.bannerGDRP.click();
+    await page.expectInVisibility(page.bannerGDRP);
   });
 
   it('should display leaderboard', async () => {
