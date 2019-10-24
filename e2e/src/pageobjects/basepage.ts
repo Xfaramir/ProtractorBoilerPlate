@@ -1,6 +1,4 @@
-import { protractor } from 'protractor/built/ptor';
-
-import { browser, element, ElementFinder, by } from 'protractor';
+import { browser, element, ElementFinder, by, protractor } from 'protractor';
 
 const EC = protractor.ExpectedConditions;
 export default class BasePage {
@@ -22,6 +20,10 @@ export default class BasePage {
 
   async navigateTo() {
     return await browser.get(browser.baseUrl);
+  }
+
+  async navigateToWeb(WebUrl) {
+    await browser.get(WebUrl);
   }
 
   async hitEnter() {

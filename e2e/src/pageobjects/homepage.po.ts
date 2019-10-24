@@ -38,11 +38,7 @@ export class HomePage extends BasePage {
     );
 
     this.bannerGDRP = element(
-      by.js(() => {
-        return document.querySelector(
-          'div.MuiDrawer-root.MuiDrawer-docked button'
-        );
-      })
+      by.css('div.MuiDrawer-root.MuiDrawer-docked button')
     );
 
     this.leaderboardButton = element(by.css('.jss276 h2'));
@@ -54,10 +50,16 @@ export class HomePage extends BasePage {
     );
 
     this.levelUpButton = element(
-      by.css('h6.MuiTypography-root.MuiTypography-subtitle2')
+      by.css('button.MuiTypography-root.MuiTypography-subtitle2')
     );
-    this.connectButton = element(by.css('.MuiBox-root>  h6:nth-child(2)'));
-    this.escapeButton = element(by.css('.MuiBox-root>  h6:nth-child(3)'));
+
+    this.connectButton = element(
+      by.xpath('//*[@id="__next"]/div/div[2]/div/div[4]/div[1]/div/button[2]')
+    );
+
+    this.escapeButton = element(
+      by.xpath('//*[@id="__next"]/div/div[2]/div/div[4]/div[1]/div/button[3]')
+    );
 
     this.coachCarrouselImage = element(
       by.css(

@@ -12,7 +12,7 @@
       "args": [
         "${workspaceRoot}/e2e/protractor.conf.js",
         "--suite",
-        "searchPage"
+        "learnPage"
       ]
     }
   ]

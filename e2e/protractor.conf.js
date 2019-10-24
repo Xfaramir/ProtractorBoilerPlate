@@ -24,19 +24,21 @@ exports.config = {
   suites: {
     homePage: [
       'src/specs/home/home.e2e-spec.ts',
-      'src/specs/home/NavLinks.e2e-spec.ts'
+      'src/specs/home/NavLinks.e23-spec.ts'
     ],
     playPage: 'src/specs/play/play.e2e-spec.ts',
     searchPage: 'src/specs/Search.e2e-spec.ts',
-    learnPage: 'src/specs/learn/learn.e2e-spec.ts'
+    learnPage: 'src/specs/learn/learn.e2e-spec.ts',
+    visualTest: 'src/specs/visualCrossBrowser.e23-spec.ts'
   },
   capabilities: {
     browserName: 'chrome'
   },
+
   // multiCapabilities: [
   //   {
   //     name: 'chrome',
-  //     browserName: 'chrome',s
+  //     browserName: 'chrome',
   //     count: 1,
   //     'goog:chromeOptions': {
   //       args: [

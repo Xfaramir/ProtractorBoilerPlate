@@ -1,28 +1,33 @@
-export class ViewEyes {
-  eyesAPI = 'noa4WKoJpwK108Q62uxt37xp44WMmy7Ulo7a1XLTuAh4g110';
+export default class ViewEyes {
+  eyesAPI = 'C0HDYRiesZCoE110K8fFcNRxQsITWI8BX64ws3IdhJhA8110';
   appName: string;
   testName: string;
   runAsBatch: boolean;
   changeTest: boolean;
   fullScreenShot: boolean;
   resultStr: string;
+  batchName: any;
+  batchId: any;
 
-  constructor(testName) {
+  constructor(testName, batchName, batchId) {
     // In case you need to create a new baseline just change appname and testname below.
-    this.appName = 'Framework GSuite 05/15/2019';
+    this.appName = 'Framework G';
     this.testName = testName;
+    this.batchName = batchName;
+    this.batchId = batchId;
     // runAsBatch to be set to true in case of jenkins CI.
     this.runAsBatch = true;
-    this.changeTest = false;
-    this.fullScreenShot = false;
+    this.changeTest = true;
+    this.fullScreenShot = true;
     this.resultStr = '';
   }
 
   setup(eyes) {
     eyes.setApiKey(this.eyesAPI);
-    // Enabling FULL Page Screenshots. true,false
+    eyes.setBatch(this.batchName, this.batchId);
+
     eyes.setForceFullPageScreenshot(this.fullScreenShot);
-    if (this.runAsBatch) {
+    if (this.runAsBatch === false) {
       eyes.setBatch(
         process.env.APPLITOOLS_BATCH_NAME,
         process.env.APPLITOOLS_BATCH_ID
