@@ -1,0 +1,65 @@
+{
+  "uid" : "a2ed37b5b1bddb54",
+  "name" : "should Browse Courses by State",
+  "fullName" : "Play Page.should Browse Courses by State",
+  "historyId" : "4fbf2941b78909172d76888a7c9cb606",
+  "time" : {
+    "start" : 1572033507408,
+    "stop" : 1572033509746,
+    "duration" : 2338
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b502a3166c038e1",
+      "name" : "Screenshot",
+      "source" : "b502a3166c038e1.png",
+      "type" : "image/png",
+      "size" : 87716
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "Normal"
+  }, {
+    "name" : "suite",
+    "value" : "Play Page"
+  }, {
+    "name" : "testClass",
+    "value" : "Play Page"
+  }, {
+    "name" : "testMethod",
+    "value" : "should Browse Courses by State"
+  }, {
+    "name" : "package",
+    "value" : "Play Page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a2ed37b5b1bddb54.json",
+  "parameterValues" : [ ]
+}

@@ -7,7 +7,10 @@
     "e2e": "ng e2e",
     "debug": "node --inspect-brk ./node_modules/protractor/bin/protractor ./e2e/protractor.conf.js",
     "dev": "node_modules/protractor/bin/protractor e2e/protractor.conf.js",
-    "test": "npm run dev -- --suite"
+    "test": "npm run dev -- --suite",
+    "generateReport": "$(cd e2e) allure generate e2e/allure-results --clean -o e2e/allure-report",
+    "viewReport": "allure serve e2e/allure-results",
+    "report": "npm run generateReport && npm run viewReport"
   },
   "private": true,
   "dependencies": {
@@ -35,6 +38,7 @@
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
+    "allure-commandline": "^2.13.0",
     "codelyzer": "~4.5.0",
     "eyes.selenium": "^3.8.2",
     "jasmine-core": "~2.99.1",

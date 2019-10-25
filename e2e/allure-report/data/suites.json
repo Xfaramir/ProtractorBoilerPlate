@@ -1,0 +1,527 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Home Page",
+    "children" : [ {
+      "name" : "should display headline",
+      "uid" : "ef0db61cd67d2d91",
+      "parentUid" : "d0066b610dc3383986e9ee25c4a2b04f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033491367,
+        "stop" : 1572033492389,
+        "duration" : 1022
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "should close gdrp banner",
+      "uid" : "be73e82f668b0e31",
+      "parentUid" : "d0066b610dc3383986e9ee25c4a2b04f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033492389,
+        "stop" : 1572033493862,
+        "duration" : 1473
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "should display leaderboard",
+      "uid" : "b456b4843c4aeeb5",
+      "parentUid" : "d0066b610dc3383986e9ee25c4a2b04f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033493862,
+        "stop" : 1572033494118,
+        "duration" : 256
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "should coach pga of america headline options",
+      "uid" : "f27a465a02ebc45",
+      "parentUid" : "d0066b610dc3383986e9ee25c4a2b04f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033494118,
+        "stop" : 1572033494536,
+        "duration" : 418
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "should focus 1 carrousel slide group option Level up",
+      "uid" : "90fd2a0263c6c1d7",
+      "parentUid" : "d0066b610dc3383986e9ee25c4a2b04f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033494536,
+        "stop" : 1572033494925,
+        "duration" : 389
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "should switch carrousel category",
+      "uid" : "69ac28d56e74a90b",
+      "parentUid" : "d0066b610dc3383986e9ee25c4a2b04f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033494926,
+        "stop" : 1572033495861,
+        "duration" : 935
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "should open overlay",
+      "uid" : "123e99ee5d8ecaa5",
+      "parentUid" : "d0066b610dc3383986e9ee25c4a2b04f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033495861,
+        "stop" : 1572033496904,
+        "duration" : 1043
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "should  play video",
+      "uid" : "3be256fab1ffc9a6",
+      "parentUid" : "d0066b610dc3383986e9ee25c4a2b04f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033496904,
+        "stop" : 1572033499748,
+        "duration" : 2844
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "should close overlay and display headline top series",
+      "uid" : "1ae191537413c865",
+      "parentUid" : "d0066b610dc3383986e9ee25c4a2b04f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033499748,
+        "stop" : 1572033501209,
+        "duration" : 1461
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "should display pga reach",
+      "uid" : "92df1a03b58a1fae",
+      "parentUid" : "d0066b610dc3383986e9ee25c4a2b04f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033501209,
+        "stop" : 1572033501819,
+        "duration" : 610
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "should display footer",
+      "uid" : "ea44ec6f91cfddcf",
+      "parentUid" : "d0066b610dc3383986e9ee25c4a2b04f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033501820,
+        "stop" : 1572033502035,
+        "duration" : 215
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "d0066b610dc3383986e9ee25c4a2b04f"
+  }, {
+    "name" : "Play Page",
+    "children" : [ {
+      "name" : "should see travel destinations and packages",
+      "uid" : "b2e2b4cd89dd2a75",
+      "parentUid" : "a4003a67cef20e8390bcfc49d5159823",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033505123,
+        "stop" : 1572033505747,
+        "duration" : 624
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "should see featured course",
+      "uid" : "ab1de9e4cd971556",
+      "parentUid" : "a4003a67cef20e8390bcfc49d5159823",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033505747,
+        "stop" : 1572033506321,
+        "duration" : 574
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "should display list of states in play search",
+      "uid" : "c2abf248aa52c92f",
+      "parentUid" : "a4003a67cef20e8390bcfc49d5159823",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033506321,
+        "stop" : 1572033507408,
+        "duration" : 1087
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "should Browse Courses by State",
+      "uid" : "a2ed37b5b1bddb54",
+      "parentUid" : "a4003a67cef20e8390bcfc49d5159823",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033507408,
+        "stop" : 1572033509746,
+        "duration" : 2338
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "should Browse Courses by City",
+      "uid" : "3f557bfbb0f35a4",
+      "parentUid" : "a4003a67cef20e8390bcfc49d5159823",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033509746,
+        "stop" : 1572033513596,
+        "duration" : 3850
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "should access course facility",
+      "uid" : "cec0b7b0640fbd42",
+      "parentUid" : "a4003a67cef20e8390bcfc49d5159823",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033513596,
+        "stop" : 1572033517607,
+        "duration" : 4011
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Change trade and value guide option",
+      "uid" : "6cd58134799fec7e",
+      "parentUid" : "a4003a67cef20e8390bcfc49d5159823",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033562098,
+        "stop" : 1572033562716,
+        "duration" : 618
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Show Official PGA Merchandise ",
+      "uid" : "57406f20abba913d",
+      "parentUid" : "a4003a67cef20e8390bcfc49d5159823",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033562716,
+        "stop" : 1572033563329,
+        "duration" : 613
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "a4003a67cef20e8390bcfc49d5159823"
+  }, {
+    "name" : "Search Page",
+    "children" : [ {
+      "name" : "should do a search",
+      "uid" : "598dc5c114347550",
+      "parentUid" : "8ab2142776913ab5c72594c8d3280eb8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033519421,
+        "stop" : 1572033519979,
+        "duration" : 558
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "should clear search results",
+      "uid" : "83c21691b404f7f5",
+      "parentUid" : "8ab2142776913ab5c72594c8d3280eb8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033519979,
+        "stop" : 1572033521204,
+        "duration" : 1225
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "should do another query from fixed search bar",
+      "uid" : "6c34c8692f167dfc",
+      "parentUid" : "8ab2142776913ab5c72594c8d3280eb8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033521204,
+        "stop" : 1572033522692,
+        "duration" : 1488
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "should do click on next pagination button",
+      "uid" : "dc880fe388e8691f",
+      "parentUid" : "8ab2142776913ab5c72594c8d3280eb8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033522692,
+        "stop" : 1572033523830,
+        "duration" : 1138
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "8ab2142776913ab5c72594c8d3280eb8"
+  }, {
+    "name" : "Learn Page",
+    "children" : [ {
+      "name" : "Learn | View promoted instructional content",
+      "uid" : "58d9068520012f85",
+      "parentUid" : "483c475b5455856744cb902e303d7e1e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033527702,
+        "stop" : 1572033528445,
+        "duration" : 743
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Learn | Access content related to instructional approach",
+      "uid" : "b781bf3340e712a9",
+      "parentUid" : "483c475b5455856744cb902e303d7e1e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033528445,
+        "stop" : 1572033528907,
+        "duration" : 462
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Learn | Browse instructional content",
+      "uid" : "7d20e548bb492930",
+      "parentUid" : "483c475b5455856744cb902e303d7e1e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033528907,
+        "stop" : 1572033529649,
+        "duration" : 742
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Learn | View instructional content",
+      "uid" : "c4f014eeec1eb8d5",
+      "parentUid" : "483c475b5455856744cb902e303d7e1e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033529649,
+        "stop" : 1572033531158,
+        "duration" : 1509
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "483c475b5455856744cb902e303d7e1e"
+  }, {
+    "name" : "Event Page",
+    "children" : [ {
+      "name" : "Events | Access Events Cards",
+      "uid" : "42ff33e6fea25b4d",
+      "parentUid" : "5c6d5a886856f7e23b35cfe30839d523",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033538176,
+        "stop" : 1572033538664,
+        "duration" : 488
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Events | Access PGAs Regional events",
+      "uid" : "fa084405f7fbe8c",
+      "parentUid" : "5c6d5a886856f7e23b35cfe30839d523",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033538664,
+        "stop" : 1572033539957,
+        "duration" : 1293
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Events | Access Current Leaderboards events",
+      "uid" : "38a5ef3203c3dc8e",
+      "parentUid" : "5c6d5a886856f7e23b35cfe30839d523",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033539957,
+        "stop" : 1572033540187,
+        "duration" : 230
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Events | Access PGA Tour events  leaderboard",
+      "uid" : "3adf3a52e7b99e6b",
+      "parentUid" : "5c6d5a886856f7e23b35cfe30839d523",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033540187,
+        "stop" : 1572033542927,
+        "duration" : 2740
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Events | View an event page",
+      "uid" : "82e3b2eb96d25fca",
+      "parentUid" : "5c6d5a886856f7e23b35cfe30839d523",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033542927,
+        "stop" : 1572033546071,
+        "duration" : 3144
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "5c6d5a886856f7e23b35cfe30839d523"
+  }, {
+    "name" : "Stories Page",
+    "children" : [ {
+      "name" : "should see stories landing page",
+      "uid" : "ba8fba96960c7f2c",
+      "parentUid" : "926d18cfbfe42e68094673184ed720cd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033548257,
+        "stop" : 1572033548962,
+        "duration" : 705
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "should see stories landing page and click on pagination",
+      "uid" : "59e4fa081879d2a6",
+      "parentUid" : "926d18cfbfe42e68094673184ed720cd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033548962,
+        "stop" : 1572033552774,
+        "duration" : 3812
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Legacy Videos Shown in Legacy Articles",
+      "uid" : "46e95aa7b5daecaf",
+      "parentUid" : "926d18cfbfe42e68094673184ed720cd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033552774,
+        "stop" : 1572033560381,
+        "duration" : 7607
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "926d18cfbfe42e68094673184ed720cd"
+  }, {
+    "name" : "Leadearboard Page",
+    "children" : [ {
+      "name" : "Access Leadearboard and display player scorecard",
+      "uid" : "2cbe39f475699312",
+      "parentUid" : "904a67f23df11ba7fdf6c6245d88dd0c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1572033566076,
+        "stop" : 1572033571724,
+        "duration" : 5648
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Open Top 5 Scorecards",
+      "uid" : "74be95a944f1938",
+      "parentUid" : "904a67f23df11ba7fdf6c6245d88dd0c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1572033571724,
+        "stop" : 1572033571724,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Open All Scorecards",
+      "uid" : "802d382c7bb7f557",
+      "parentUid" : "904a67f23df11ba7fdf6c6245d88dd0c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1572033571724,
+        "stop" : 1572033571724,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "904a67f23df11ba7fdf6c6245d88dd0c"
+  } ]
+}

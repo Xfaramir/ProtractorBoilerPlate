@@ -1,0 +1,381 @@
+[ {
+  "uid" : "59e4fa081879d2a6",
+  "name" : "should see stories landing page and click on pagination",
+  "time" : {
+    "start" : 1572033548962,
+    "stop" : 1572033552774,
+    "duration" : 3812
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c2abf248aa52c92f",
+  "name" : "should display list of states in play search",
+  "time" : {
+    "start" : 1572033506321,
+    "stop" : 1572033507408,
+    "duration" : 1087
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b456b4843c4aeeb5",
+  "name" : "should display leaderboard",
+  "time" : {
+    "start" : 1572033493862,
+    "stop" : 1572033494118,
+    "duration" : 256
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1ae191537413c865",
+  "name" : "should close overlay and display headline top series",
+  "time" : {
+    "start" : 1572033499748,
+    "stop" : 1572033501209,
+    "duration" : 1461
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "74be95a944f1938",
+  "name" : "Open Top 5 Scorecards",
+  "time" : {
+    "start" : 1572033571724,
+    "stop" : 1572033571724,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "6c34c8692f167dfc",
+  "name" : "should do another query from fixed search bar",
+  "time" : {
+    "start" : 1572033521204,
+    "stop" : 1572033522692,
+    "duration" : 1488
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "69ac28d56e74a90b",
+  "name" : "should switch carrousel category",
+  "time" : {
+    "start" : 1572033494926,
+    "stop" : 1572033495861,
+    "duration" : 935
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3be256fab1ffc9a6",
+  "name" : "should  play video",
+  "time" : {
+    "start" : 1572033496904,
+    "stop" : 1572033499748,
+    "duration" : 2844
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ba8fba96960c7f2c",
+  "name" : "should see stories landing page",
+  "time" : {
+    "start" : 1572033548257,
+    "stop" : 1572033548962,
+    "duration" : 705
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "46e95aa7b5daecaf",
+  "name" : "Legacy Videos Shown in Legacy Articles",
+  "time" : {
+    "start" : 1572033552774,
+    "stop" : 1572033560381,
+    "duration" : 7607
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "92df1a03b58a1fae",
+  "name" : "should display pga reach",
+  "time" : {
+    "start" : 1572033501209,
+    "stop" : 1572033501819,
+    "duration" : 610
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "57406f20abba913d",
+  "name" : "Show Official PGA Merchandise ",
+  "time" : {
+    "start" : 1572033562716,
+    "stop" : 1572033563329,
+    "duration" : 613
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "90fd2a0263c6c1d7",
+  "name" : "should focus 1 carrousel slide group option Level up",
+  "time" : {
+    "start" : 1572033494536,
+    "stop" : 1572033494925,
+    "duration" : 389
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "83c21691b404f7f5",
+  "name" : "should clear search results",
+  "time" : {
+    "start" : 1572033519979,
+    "stop" : 1572033521204,
+    "duration" : 1225
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "802d382c7bb7f557",
+  "name" : "Open All Scorecards",
+  "time" : {
+    "start" : 1572033571724,
+    "stop" : 1572033571724,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "a2ed37b5b1bddb54",
+  "name" : "should Browse Courses by State",
+  "time" : {
+    "start" : 1572033507408,
+    "stop" : 1572033509746,
+    "duration" : 2338
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "38a5ef3203c3dc8e",
+  "name" : "Events | Access Current Leaderboards events",
+  "time" : {
+    "start" : 1572033539957,
+    "stop" : 1572033540187,
+    "duration" : 230
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "598dc5c114347550",
+  "name" : "should do a search",
+  "time" : {
+    "start" : 1572033519421,
+    "stop" : 1572033519979,
+    "duration" : 558
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cec0b7b0640fbd42",
+  "name" : "should access course facility",
+  "time" : {
+    "start" : 1572033513596,
+    "stop" : 1572033517607,
+    "duration" : 4011
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6cd58134799fec7e",
+  "name" : "Change trade and value guide option",
+  "time" : {
+    "start" : 1572033562098,
+    "stop" : 1572033562716,
+    "duration" : 618
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b2e2b4cd89dd2a75",
+  "name" : "should see travel destinations and packages",
+  "time" : {
+    "start" : 1572033505123,
+    "stop" : 1572033505747,
+    "duration" : 624
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ef0db61cd67d2d91",
+  "name" : "should display headline",
+  "time" : {
+    "start" : 1572033491367,
+    "stop" : 1572033492389,
+    "duration" : 1022
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c4f014eeec1eb8d5",
+  "name" : "Learn | View instructional content",
+  "time" : {
+    "start" : 1572033529649,
+    "stop" : 1572033531158,
+    "duration" : 1509
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dc880fe388e8691f",
+  "name" : "should do click on next pagination button",
+  "time" : {
+    "start" : 1572033522692,
+    "stop" : 1572033523830,
+    "duration" : 1138
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3adf3a52e7b99e6b",
+  "name" : "Events | Access PGA Tour events  leaderboard",
+  "time" : {
+    "start" : 1572033540187,
+    "stop" : 1572033542927,
+    "duration" : 2740
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3f557bfbb0f35a4",
+  "name" : "should Browse Courses by City",
+  "time" : {
+    "start" : 1572033509746,
+    "stop" : 1572033513596,
+    "duration" : 3850
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7d20e548bb492930",
+  "name" : "Learn | Browse instructional content",
+  "time" : {
+    "start" : 1572033528907,
+    "stop" : 1572033529649,
+    "duration" : 742
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fa084405f7fbe8c",
+  "name" : "Events | Access PGAs Regional events",
+  "time" : {
+    "start" : 1572033538664,
+    "stop" : 1572033539957,
+    "duration" : 1293
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "82e3b2eb96d25fca",
+  "name" : "Events | View an event page",
+  "time" : {
+    "start" : 1572033542927,
+    "stop" : 1572033546071,
+    "duration" : 3144
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f27a465a02ebc45",
+  "name" : "should coach pga of america headline options",
+  "time" : {
+    "start" : 1572033494118,
+    "stop" : 1572033494536,
+    "duration" : 418
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "123e99ee5d8ecaa5",
+  "name" : "should open overlay",
+  "time" : {
+    "start" : 1572033495861,
+    "stop" : 1572033496904,
+    "duration" : 1043
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "58d9068520012f85",
+  "name" : "Learn | View promoted instructional content",
+  "time" : {
+    "start" : 1572033527702,
+    "stop" : 1572033528445,
+    "duration" : 743
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b781bf3340e712a9",
+  "name" : "Learn | Access content related to instructional approach",
+  "time" : {
+    "start" : 1572033528445,
+    "stop" : 1572033528907,
+    "duration" : 462
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "42ff33e6fea25b4d",
+  "name" : "Events | Access Events Cards",
+  "time" : {
+    "start" : 1572033538176,
+    "stop" : 1572033538664,
+    "duration" : 488
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ea44ec6f91cfddcf",
+  "name" : "should display footer",
+  "time" : {
+    "start" : 1572033501820,
+    "stop" : 1572033502035,
+    "duration" : 215
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "be73e82f668b0e31",
+  "name" : "should close gdrp banner",
+  "time" : {
+    "start" : 1572033492389,
+    "stop" : 1572033493862,
+    "duration" : 1473
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2cbe39f475699312",
+  "name" : "Access Leadearboard and display player scorecard",
+  "time" : {
+    "start" : 1572033566076,
+    "stop" : 1572033571724,
+    "duration" : 5648
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ab1de9e4cd971556",
+  "name" : "should see featured course",
+  "time" : {
+    "start" : 1572033505747,
+    "stop" : 1572033506321,
+    "duration" : 574
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
