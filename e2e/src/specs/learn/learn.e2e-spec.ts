@@ -14,13 +14,13 @@ describe('Learn Page', () => {
   it('Learn | View promoted instructional content', async () => {
     await page.expectVisibility(page.learnHero);
   });
-  /* 
-  it('should close gdrp banner', async () => {
-    await page.expectVisibility(page.bannerGDRP);
-    await page.bannerGDRP.click();
-    await page.expectInVisibility(page.bannerGDRP);
-  });
- */
+
+  //  it('should close gdrp banner', async () => {
+  //     await page.expectVisibility(page.bannerGDRP);
+  //     await page.bannerGDRP.click();
+  //     await page.expectInVisibility(page.bannerGDRP);
+  //   });
+
   it('Learn | Access content related to instructional approach', async () => {
     await page.scrollCenter(page.learnInstructional);
   });

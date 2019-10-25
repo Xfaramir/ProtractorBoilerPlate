@@ -27,4 +27,3 @@ export class LearnPage extends BasePage {
     return browser.get(this.url);
   }
 }
-  

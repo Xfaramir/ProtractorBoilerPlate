@@ -29,6 +29,10 @@ exports.config = {
     playPage: 'src/specs/play/play.e2e-spec.ts',
     searchPage: 'src/specs/Search.e2e-spec.ts',
     learnPage: 'src/specs/learn/learn.e2e-spec.ts',
+    eventPage: 'src/specs/events/events.e2e-spec.ts',
+    storiesPage: 'src/specs/stories/stories.e2e-spec.ts',
+    shopPage: 'src/specs/shop/shop.e2e-spec.ts',
+    leaderboardPage: 'src/specs/events/leaderboards.e2e-spec.ts',
     visualTest: 'src/specs/visualCrossBrowser.e23-spec.ts'
   },
   capabilities: {

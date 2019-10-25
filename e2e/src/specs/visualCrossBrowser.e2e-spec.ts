@@ -2,12 +2,11 @@ import { HomePage } from '../pageobjects/homepage.po';
 import { browser, logging, element, by, protractor } from 'protractor';
 import ViewEyes from '../../config/eyeConfig';
 
-//Testing Json File with list of Url to be tested.
+// Testing Json File with list of Url to be tested.
 const json = require('../../config/target.json');
 
 const Eyes = require('eyes.selenium').Eyes;
 const eyes = new Eyes();
-browser.ignoreSynchronization = true;
 
 for (const site of json) {
   if (site.pages) {
@@ -22,7 +21,7 @@ for (const site of json) {
 
           beforeEach(async () => {});
 
-          it(`${page.Page}`, async function() {
+          it(`${page.Page}`, async () => {
             console.log(page.URL);
 
             await eyes.open(browser, page.Locale, page.Page + ' ..');
