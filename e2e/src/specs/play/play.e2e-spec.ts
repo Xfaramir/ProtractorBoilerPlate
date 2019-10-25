@@ -50,11 +50,6 @@ describe('Play Page', () => {
     await page.scrollCenter(page.playFacilityCoaches);
   });
 
-  xit('test', async () => {
-    await page.sendEnter();
-    await browser.sleep(1000);
-  });
-
   afterEach(async () => {
     // Assert that there are no errors emitted from the browser
     // const logs = await browser

@@ -79,10 +79,6 @@ describe('Home Page', () => {
     await page.scrollStart(page.footer);
   });
 
-  xit('test', async () => {
-    await browser.sleep(1000);
-  });
-
   afterEach(async () => {
     // Assert that there are no errors emitted from the browser
     //   const logs = await browser
