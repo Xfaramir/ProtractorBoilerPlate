@@ -9,7 +9,7 @@ const screenShotUtils = require('protractor-screenshot-utils')
   .ProtractorScreenShotUtils;
 
 exports.config = {
-  directConnect: false,
+  directConnect: true,
   seleniumAddress: 'http://localhost:4444/wd/hub',
   baseUrl: 'https://www.protractortest.org',
   SELENIUM_PROMISE_MANAGER: false,
@@ -36,7 +36,7 @@ exports.config = {
     visualTest: 'src/specs/visualCrossBrowser.e23-spec.ts'
   },
   capabilities: {
-    browserName: 'chrome'
+    browserName: 'firefox'
   },
 
   // multiCapabilities: [
