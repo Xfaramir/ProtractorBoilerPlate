@@ -1,4 +1,4 @@
-# Javascript Node CircleCI 2.0 configuration file
+ Javascript Node CircleCI 2.0 configuration file
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
@@ -34,17 +34,11 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
-      - run: npm run e2e
-      
+      - run: npm e2e test
+
 workflows:
         version: 2
         # the test workflow
         test_workflow:
             jobs:
                 - build:
-                    filters:
-                        branches:
-                            only:
-                                - develop
-                                - staging
-                                - master
