@@ -117,6 +117,9 @@ exports.config = {
       .manage()
       .window()
       .maximize();
+    require('ts-node').register({
+      project: 'e2e/tsconfig.e2e.json'
+    });
 
     global.screenShotUtils = new screenShotUtils({
       browserInstance: browser,
