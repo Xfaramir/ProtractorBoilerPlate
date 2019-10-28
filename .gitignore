@@ -4,7 +4,9 @@
 /dist
 /tmp
 /out-tsc
-/e2e/allure-results
+/e2e/allure-results/*.png
+/e2e/allure-results/*.xml
+
 # Only exists if Bazel was run
 /bazel-out
 
