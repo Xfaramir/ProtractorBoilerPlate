@@ -35,10 +35,3 @@ jobs:
 
       # run tests!
       - run: npm e2e test
-
-workflows:
-  version: 2
-    build_and_test:
-      jobs:
-        - build
-        - test
