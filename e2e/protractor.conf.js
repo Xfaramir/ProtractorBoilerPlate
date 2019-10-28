@@ -41,8 +41,8 @@ exports.config = {
     browserName: 'firefox'
   },
 
-  /*   multiCapabilities: [{ browserName: 'chrome' }, { browserName: 'firefox' }],
-  maxSessions: 2, */
+  // multiCapabilities: [{ browserName: 'chrome' }, { browserName: 'firefox' }],
+  // maxSessions: 2,
 
   // multiCapabilities: [
   //   {
