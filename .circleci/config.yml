@@ -42,3 +42,9 @@ workflows:
         test_workflow:
             jobs:
                 - build:
+                    filters:
+                        branches:
+                            only:
+                                - develop
+                                - staging
+                                - master
