@@ -12,7 +12,9 @@ jobs:
         - v1-dependencies-
     - run: npm install
     - run: npm run webdriver-update
-    - run: sudo npm install typescript@3.2.2 -g 
+    - run: sudo npm install typescript@3.2.2 -g
+    - run: npm install ts-node --save-dev
+    - run: npm install typescript --save-dev
     - save_cache:
         paths:
         - node_modules
