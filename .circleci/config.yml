@@ -41,4 +41,4 @@ workflows:
         # the test workflow
         test_workflow:
             jobs:
-                - build:
+                - build
