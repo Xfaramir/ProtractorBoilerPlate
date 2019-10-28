@@ -2,20 +2,6 @@
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
-
-workflows:
-  version: 2
-  # the test workflow
-  test_workflow:
-    jobs:
-      - deploy:
-          filters:
-            branches:
-              only:
-                - develop
-                - staging
-                - master
-
 version: 2
 jobs:
   build:
@@ -48,4 +34,4 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
-      - run: npm e2e
+      - run: npm run e2e
