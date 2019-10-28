@@ -40,7 +40,7 @@ version: 2
                     name: End to End Test
                     command: npm run e2e
 
-     workflows:
+workflows:
         version: 2
         # the test workflow
         test_workflow:
