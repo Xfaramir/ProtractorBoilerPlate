@@ -8,6 +8,8 @@ const AllureReporter = require('jasmine-allure-reporter');
 const screenShotUtils = require('protractor-screenshot-utils')
   .ProtractorScreenShotUtils;
 
+const VideoReporter = require('protractor-video-reporter');
+
 exports.config = {
   directConnect: false,
   seleniumAddress: 'http://localhost:4444/wd/hub',
@@ -36,7 +38,7 @@ exports.config = {
     visualTest: 'src/specs/visualCrossBrowser.e23-spec.ts'
   },
   capabilities: {
-    browserName: 'chrome'
+    browserName: 'firefox'
   },
 
   /*   multiCapabilities: [{ browserName: 'chrome' }, { browserName: 'firefox' }],
@@ -148,5 +150,28 @@ exports.config = {
         done();
       });
     });
+
+    //if needed to create a video for the test run uncomment below and run direct connect true
+    // jasmine.getEnv().addReporter(
+    //   new VideoReporter({
+    //     baseDirectory: './e2e/reports/video-report',
+    //     createSubtitles: true,
+    //     singleVideo: true,
+    //     ffmpegArgs: [
+    //       '-f',
+    //       'avfoundation',
+    //       '-i',
+    //       '1',
+    //       '-pix_fmt',
+    //       'yuv420p',
+    //       '-r',
+    //       '24',
+    //       '-video_size',
+    //       'woxga',
+    //       '-q:v',
+    //       '10'
+    //     ]
+    //   })
+    // );
   }
 };

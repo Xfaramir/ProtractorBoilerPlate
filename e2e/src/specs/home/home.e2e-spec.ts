@@ -18,21 +18,21 @@ describe('Home Page', () => {
 
   beforeEach(async () => {});
 
-  it('should display headline', async () => {
+  it('should display headline', async () => {
     await expect(page.header.getText()).toEqual('MEET PGA');
   });
 
-  it('should close gdrp banner', async () => {
+  it('should close gdrp banner', async () => {
     await page.expectVisibility(page.bannerGDRP);
     await page.bannerGDRP.click();
     await page.expectInVisibility(page.bannerGDRP);
   });
 
-  it('should display leaderboard', async () => {
+  it('should display leaderboard', async () => {
     await page.expectAndScroll(page.leaderboardButton);
   });
 
-  it('should coach pga of america headline options', async () => {
+  it('should coach pga of america headline options', async () => {
     await page.expectVisibility(page.pgaOfAmericaHeadline);
     await page.scrollCenter(page.pgaOfAmericaHeadline);
     await expect(page.pgaOfAmericaHeadline.getText()).toEqual(
@@ -59,7 +59,7 @@ describe('Home Page', () => {
     await browser.sleep(2000);
   });
 
-  it('should close overlay and display headline top series', async () => {
+  it('should close overlay and display headline top series', async () => {
     await page.expectClickable(page.coachOverlayCloseButton);
     await page.coachOverlayCloseButton.click();
     await page.scrollStart(page.topStoriesHeadline);
