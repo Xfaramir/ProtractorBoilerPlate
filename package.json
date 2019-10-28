@@ -7,6 +7,7 @@
     "e2e": "ng e2e",
     "debug": "node --inspect-brk ./node_modules/protractor/bin/protractor ./e2e/protractor.conf.js",
     "dev": "node_modules/protractor/bin/protractor e2e/protractor.conf.js",
+    "webdriver-update": "node_modules/protractor/bin/webdriver-manager update",
     "browserStack": "node_modules/protractor/bin/protractor e2e/protractorStack.conf.js",
     "test": "npm run dev -- --suite",
     "generateReport": "$(cd e2e) allure generate e2e/allure-results --clean -o e2e/allure-report",
