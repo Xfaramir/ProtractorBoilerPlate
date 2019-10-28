@@ -29,24 +29,20 @@ describe('Play Page', () => {
   it('should Browse Courses by State', async () => {
     await page.scrollEnd(page.playSearchBar);
     await page.playSearchBar.sendKeys(' state');
-    await page.sendEnter();
+    await page.playSearch.click();
     await browser.sleep(2000);
   });
 
   it('should Browse Courses by City', async () => {
     await page.navigateTo();
     await page.playSearchBar.sendKeys('city');
-    await page.sendEnter();
+    await page.playSearch.click();
     await browser.sleep(2000);
   });
 
   it('should access course facility', async () => {
-    await page.navigateTo();
-    await page.playSearchBar.sendKeys('settlers-bay-golf-course');
-    await page.sendEnter();
-    await page.expectElement(page.playFacility);
-    await page.playFacility.click();
-    await browser.sleep(1000);
+    await page.navigateToWeb(page.playCourseFacilityUrl);
+    await page.expectElement(page.playFacilityCoaches);
     await page.scrollCenter(page.playFacilityCoaches);
   });
 

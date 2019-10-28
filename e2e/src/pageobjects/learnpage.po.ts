@@ -11,7 +11,7 @@ export class LearnPage extends BasePage {
   constructor() {
     super();
 
-    this.url = 'https://d2eam07qccllcf.cloudfront.net/learn';
+    this.url = 'http://beta.pga.com/learn';
     this.learnHero = element(by.css('.jss106 div:nth-child(4) a > h2'));
     this.learnInstructional = element(by.css('.jss293 h5'));
     this.learnBrowseInstructional = element(

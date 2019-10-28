@@ -27,7 +27,7 @@ export class HomePage extends BasePage {
   constructor() {
     super();
 
-    this.url = 'https://d2eam07qccllcf.cloudfront.net/';
+    this.url = 'http://beta.pga.com/';
 
     this.header = element(
       by.js(() => {

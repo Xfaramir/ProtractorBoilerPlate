@@ -17,14 +17,14 @@ describe('Search Page', () => {
   });
 
   it('should clear search results', async () => {
-    await searchPage.sendEnter();
+    await searchPage.searchButton.click();
     await searchPage.expectVisibility(searchPage.searchBar);
     await searchPage.searchClearButton.click();
   });
 
   it('should do another query from fixed search bar', async () => {
     await searchPage.searchBar.sendKeys('pga');
-    await searchPage.sendEnter();
+    await searchPage.searchResultButton.click();
     await searchPage.expectVisibility(searchPage.searchResultSpan);
 
     const queryResults = await searchPage.searchResultSpan.getText();
@@ -32,12 +32,12 @@ describe('Search Page', () => {
   });
   // if only testing search please uncomment lines below.
 
-  /*   it('should close gdrp banner', async () => {
-    await searchPage.expectVisibility(searchPage.bannerGDRP);
-    await searchPage.bannerGDRP.click();
-    await searchPage.expectInVisibility(searchPage.bannerGDRP);
-  });
- */
+  // it('should close gdrp banner', async () => {
+  //   await searchPage.expectVisibility(searchPage.bannerGDRP);
+  //   await searchPage.bannerGDRP.click();
+  //   await searchPage.expectInVisibility(searchPage.bannerGDRP);
+  // });
+
   it('should do click on next pagination button', async () => {
     await searchPage.expectElement(searchPage.searchPaginationButton);
     await searchPage.searchPaginationButton.click();

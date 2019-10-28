@@ -12,10 +12,10 @@ export class StoriesPage extends BasePage {
   storiesArchiveVideo: ElementFinder;
   constructor() {
     super();
-    this.url = 'https://d2eam07qccllcf.cloudfront.net/stories';
-    this.storiesAllUrl = 'https://d2eam07qccllcf.cloudfront.net/stories/all';
+    this.url = 'http://beta.pga.com/stories';
+    this.storiesAllUrl = 'http://beta.pga.com/stories/all';
     this.storiesArchiveUrl =
-      'https://d2eam07qccllcf.cloudfront.net/archive/events/pgachampionship/what-winning-open-championship-means-pga-championship';
+      'http://beta.pga.com/archive/events/pgachampionship/what-winning-open-championship-means-pga-championship';
 
     this.storiesHeadline = element(
       by.xpath('//*[@id="__next"]/div/div[2]/div/div[1]/div/div/h1')

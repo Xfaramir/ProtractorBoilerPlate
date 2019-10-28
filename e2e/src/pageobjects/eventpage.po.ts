@@ -18,7 +18,7 @@ export class EventPage extends BasePage {
   leaderBoardRoundsElement: ElementFinder;
   constructor() {
     super();
-    this.url = 'https://d2eam07qccllcf.cloudfront.net/events';
+    this.url = 'http://beta.pga.com/events';
     this.eventsCards = element(
       by.xpath('//*[@id="__next"]/div/div[2]/div/div[2]/div[1]/h4')
     );
@@ -47,11 +47,11 @@ export class EventPage extends BasePage {
     );
 
     this.pgaTourUrl =
-      'https://d2eam07qccllcf.cloudfront.net/events/leaderboards/pga-tour';
+      'http://beta.pga.com/events/leaderboards/pga-tour';
     this.lpgaTourUrl =
-      'https://d2eam07qccllcf.cloudfront.net/events/leaderboards/lpga-tour';
+      'http://beta.pga.com/events/leaderboards/lpga-tour';
     this.pgaaTourUrl =
-      'https://d2eam07qccllcf.cloudfront.net/events/leaderboards/champions-tour';
+      'http://beta.pga.com/events/leaderboards/champions-tour';
 
     this.leaderboardScorecards = element.all(by.css('.jss257.jss258'));
   }

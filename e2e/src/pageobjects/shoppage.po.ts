@@ -9,7 +9,7 @@ export class ShopPage extends BasePage {
   shopMerchandise: ElementFinder;
   constructor() {
     super();
-    this.url = 'https://d2eam07qccllcf.cloudfront.net/shop';
+    this.url = 'http://beta.pga.com/shop';
     this.shopTradeButton = element(
       by.xpath(
         '//*[@id="__next"]/div/div[2]/div/div[1]/div[2]/div[1]/div/button[2]'
