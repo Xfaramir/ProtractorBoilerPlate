@@ -12,6 +12,7 @@ jobs:
         - v1-dependencies-
     - run: npm install
     - run: npm run webdriver-update
+    - run: npm install typescript -g
     - save_cache:
         paths:
         - node_modules
