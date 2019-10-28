@@ -11,7 +11,7 @@ const screenShotUtils = require('protractor-screenshot-utils')
 const VideoReporter = require('protractor-video-reporter');
 
 exports.config = {
-  directConnect: false,
+  directConnect: true,
   seleniumAddress: 'http://localhost:4444/wd/hub',
   baseUrl: 'https://www.protractortest.org',
   SELENIUM_PROMISE_MANAGER: false,
