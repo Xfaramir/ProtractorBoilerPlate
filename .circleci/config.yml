@@ -37,7 +37,8 @@ jobs:
       - run: npm e2e test
 
 workflows:
-  version: 2
-  build_and_test:
-    jobs:
-      - build
+        version: 2
+        # the test workflow
+        test_workflow:
+            jobs:
+                - build:
