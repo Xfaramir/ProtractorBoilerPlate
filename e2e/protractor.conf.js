@@ -117,9 +117,6 @@ exports.config = {
       .manage()
       .window()
       .maximize();
-    require('ts-node').register({
-      project: require('path').resolve(__dirname, './tsconfig.e2e.json')
-    });
 
     global.screenShotUtils = new screenShotUtils({
       browserInstance: browser,
