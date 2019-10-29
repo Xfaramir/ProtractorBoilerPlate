@@ -111,9 +111,7 @@ exports.config = {
   //     }
   //   }
   // ],
-  beforeLaunch: function() {
-    require('ts-node/register');
-  },
+
   onPrepare() {
     browser.driver
       .manage()
