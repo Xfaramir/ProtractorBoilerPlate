@@ -38,7 +38,11 @@ exports.config = {
     visualTest: 'src/specs/visualCrossBrowser.e23-spec.ts'
   },
   capabilities: {
-    browserName: 'firefox'
+    browserName: 'firefox',
+
+    'moz:firefoxOptions': {
+      args: ['--headless']
+    }
   },
 
   // multiCapabilities: [{ browserName: 'chrome' }, { browserName: 'firefox' }],
